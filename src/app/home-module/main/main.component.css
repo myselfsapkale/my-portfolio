@@ -1,0 +1,7 @@
+#main {
+    display: flex;
+}
+
+#child-container {
+    width: 100%;
+}

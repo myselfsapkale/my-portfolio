@@ -1,0 +1,126 @@
+#nav-wrapper{
+    position: relative;
+}
+
+header {
+    background-color: rebeccapurple;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-family: system-ui;
+}
+
+#arrow-icon {
+    position: absolute;
+    right: -40px;
+    top: 0px;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 233, 233);
+    cursor: pointer;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    /* clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */
+}
+
+.arrow-icon-reverse {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+header nav ul {
+    list-style: none;
+    color: aliceblue;
+    padding: 0px 10px 0px 10px;
+}
+
+/* It will only effect first list item */
+header nav ul li:nth-child(1) {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* It will not effect on first list item */
+header nav ul li:not(:nth-child(1)) {
+    margin-bottom: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a:hover {
+    color: rgb(24, 233, 233);
+}
+
+header nav ul li a span {
+    margin-left: 15px;
+}
+
+.hide-nav-items {
+    display: none;
+}
+
+.show-nav-items {
+    display: block;
+}
+
+.show-header {
+    width: 250px;
+    transition: all 2s;
+}
+
+.active-tab {
+    /* color: rgb(128, 237, 239) !important; */
+    background-color: white;
+    color: black !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+/* For mobile device or portrat tablets */
+@media only screen and (max-width: 768px) {
+
+    header nav ul li a {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    header nav ul li:nth-child(1) {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    header nav ul li:not(:nth-child(1)) {
+        margin-bottom: 30px;
+    }
+
+    header nav ul li a span {
+        margin-left: 10px;
+    }
+
+    .show-header {
+        width: 150px;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}

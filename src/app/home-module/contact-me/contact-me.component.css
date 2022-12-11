@@ -1,0 +1,188 @@
+#contact-main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+}
+
+#contact-wrapper {
+    /* border: double 8px; */
+    /* border-radius: 0px 0px 150px 0px; */
+    /* padding: 70px; */
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-inf p {
+    margin-top: 20px;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#contact-info>div {
+    padding: 20px;
+    gap: 50px;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+}
+
+#contact-info>div>div {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    font-size: 20px;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px rgb(12, 12, 110);
+}
+
+#contact-info>div>div:hover {
+    transition: 0.5s all;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#contact-head {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#contact-head span {
+    color: rgb(63, 5, 110);
+}
+
+.social-icons {
+    display: block;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: rgb(12, 12, 110);
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+.social-icons a:not(:nth-child(1)) {
+    margin-left: 18px;
+}
+
+.a-text {
+    text-decoration: none;
+    color: rgb(12, 12, 110);
+}
+
+.a-text:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+/* For mobile device or portrat tablets */
+@media only screen and (max-width: 768px) {
+
+    #contact-wrapper {
+        padding: 0;
+    }
+
+    #contact-info>div {
+        flex-direction: column;
+    }
+
+    #contact-info>div {
+        gap: 20px;
+    }
+
+    #contact-info>div>div {
+        width: auto;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #contact-head {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    #contact-info>div {
+        padding: 0;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1284px) and (orientation : landscape) {
+
+    #contact-wrapper {
+        padding: 0;
+    }
+
+    #contact-info>div {
+        gap: 20px;
+    }
+
+    #contact-info>div>div {
+        width: 300px;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #contact-head {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    #contact-info>div {
+        padding: 0;
+    }
+}
+
+/* Portrat tablets */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    #contact-wrapper {
+        padding: 0;
+    }
+
+    #contact-info>div {
+        flex-direction: column;
+    }
+
+}
+
+/* For Mobile Landscape Mode */
+@media only screen and (max-width: 992px) and (min-width: 768px) and (orientation: landscape) {
+    #contact-wrapper {
+        padding: 0px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
