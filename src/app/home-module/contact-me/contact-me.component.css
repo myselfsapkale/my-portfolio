@@ -8,6 +8,10 @@
     overflow: auto;
 }
 
+#img {
+    display: none;
+}
+
 #contact-wrapper {
     /* padding: 70px; */
     /* width: 70%; */
@@ -178,7 +182,7 @@
 
 /* For Mobile Landscape Mode */
 @media only screen and (max-width: 992px) and (min-width: 768px) and (orientation: landscape) {
-   
+
     #contact-wrapper {
         padding: 0px;
     }
@@ -192,10 +196,29 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    #contact-wrapper {
-        padding: 80px;
-        border: double 8px;
-        border-radius: 50px 50px 50px 50px;
+    /* #contact-wrapper { */
+        /* padding: 80px; */
+        /* border: double 8px; */
+        /* border-radius: 50px 50px 50px 50px; */
+    /* } */
+
+    #contact-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    #img{
+        display: block;
+        height: 100%;
+        width: 60%;
+        background-image: url('../../../assets/img/contact.jpg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #contact-info>div{
+        flex-direction: column;
     }
 
 }
