@@ -9,8 +9,6 @@
 }
 
 #contact-wrapper {
-    /* border: double 8px; */
-    /* border-radius: 0px 0px 150px 0px; */
     /* padding: 70px; */
     /* width: 70%; */
     display: flex;
@@ -46,6 +44,7 @@
     font-size: 20px;
     width: 400px;
     box-shadow: 1px 1px 1px 1px rgb(12, 12, 110);
+    border: 1px solid gray;
 }
 
 #contact-info>div>div:hover {
@@ -74,7 +73,7 @@
 }
 
 .social-icons a:hover {
-    color: #000;
+    color: blue;
 }
 
 .social-icons a:not(:nth-child(1)) {
@@ -87,7 +86,7 @@
 }
 
 .a-text:hover {
-    color: #000;
+    color: blue;
 }
 
 
@@ -179,10 +178,24 @@
 
 /* For Mobile Landscape Mode */
 @media only screen and (max-width: 992px) and (min-width: 768px) and (orientation: landscape) {
+   
     #contact-wrapper {
         padding: 0px;
     }
+
+    #contact-main {
+        padding: 40px;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    #contact-wrapper {
+        padding: 80px;
+        border: double 8px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+}

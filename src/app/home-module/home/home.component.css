@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    overflow: auto;
 }
 
 #quotes {
@@ -183,7 +184,7 @@
 
 
 /* For Mobile Landscape Mode */
-@media only screen and (max-width: 992px) and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 992px) and (min-width: 667px) and (orientation: landscape) {
 
     #image-container {
         display: none;
@@ -192,6 +193,10 @@
     #quotes-outer {
         height: 100%;
         width: 100%;
+    }
+
+    #main {
+        padding: 50px;
     }
 
 }
