@@ -12,6 +12,11 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
         path: 'home',
         component: HomeComponent,
         title: 'Pushpendra Sapkale - Home'
