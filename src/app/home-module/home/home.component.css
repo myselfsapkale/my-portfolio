@@ -73,7 +73,6 @@
     color: aliceblue;
     font-weight: bolder;
     transition: 0.2s linear all;
-
 }
 
 #btn-group button:hover {
@@ -111,7 +110,7 @@
     }
 
     #btn-group button {
-        width: auto;
+        width: 100px;
     }
 }
 
