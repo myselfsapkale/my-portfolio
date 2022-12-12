@@ -30,6 +30,11 @@ const routes: Routes = [
         path: 'contact-me',
         component: ContactMeComponent,
         title: 'Pushpendra Sapkale - Contact Me'
+      },
+      {
+        path: 'resume',
+        loadChildren: () => import('../resume-module/resume-module.module').then( p => p.ResumeModuleModule),
+        title: 'Pushpendra Sapkale - Resume'
       }
     ]
   }
