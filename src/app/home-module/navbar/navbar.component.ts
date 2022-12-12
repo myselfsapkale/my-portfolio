@@ -9,7 +9,6 @@ export class NavbarComponent implements OnInit{
   showNavItems: boolean = true;
 
   ngOnInit(): void{
-    console.log(window.innerWidth);
     if(window.innerWidth < 500) {
       this.showNavItems = false;
     }
