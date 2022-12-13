@@ -1,0 +1,191 @@
+#projects-main {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-div {
+    width: 300px;
+}
+
+#projects-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 50px;
+}
+
+#projects-header {
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-left: solid rgb(63, 5, 110);
+    padding-left: 20px;
+}
+
+#projects-header span {
+    color: rgb(63, 5, 110);
+}
+
+.projects-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#geojson-creator {
+    background-image: url('../../../assets/img/geojson-creator.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    border: 1px solid gray;
+}
+
+#bike-rental {
+    background-image: url('../../../assets/img/bike-rental.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    border: 1px solid gray;
+}
+
+#portfolio {
+    background-image: url('../../../assets/img/portfolio.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    border: 1px solid gray;
+}
+
+.project-heading {
+    font-size: 30px;
+}
+
+.projects-inner>div {
+    padding: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.btn-grp {
+    margin-top: 20px;
+    display: flex;
+}
+
+.btn-grp button {
+    transition: 0.2s all linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-grp button {
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 7px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn-grp button:hover {
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-grp a {
+    text-decoration: none;
+}
+
+.project-img {
+    box-shadow: 5px 5px 10px rgb(107, 101, 101);
+    transition: 0.2s all linear;
+    background-color: rgba(0, 0, 0, 0.035);
+}
+
+.project-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.p-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* For mobile device or portrat tablets */
+@media only screen and (max-width: 768px) {
+
+    #projects-wrapper {
+        padding: 0;
+    }
+
+    .p-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-flex:not(:first-child){
+        margin-top: 50px;
+    }
+
+    .p-flex-2 {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    #projects-header {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-decoration: underline;
+        border: none;
+    }
+
+    #projects-inner {
+        gap: 0;
+    }
+
+    .projects-inner>div {
+        padding: 0;
+    }
+
+    .btn-grp {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .project-img{
+        width: auto;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    .p-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .p-flex-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+}
