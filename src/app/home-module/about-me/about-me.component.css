@@ -1,0 +1,95 @@
+#about-main {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 50px;
+}
+
+#about-header {
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-left: solid rgb(63, 5, 110);
+    padding-left: 20px;
+}
+
+#about-header span {
+    color: rgb(63, 5, 110);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+}
+
+#skillz {
+    flex: 2;
+    padding: 50px;
+}
+
+#about {
+    flex: 1;
+    border: 1px solid darkslategrey;
+    padding: 50px;
+}
+
+.my-quality {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.my-quality-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#my-pic {
+    height: 300px;
+    background-color: rebeccapurple;
+    background-image: url('../../../assets/img/developer.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px slategray, inset -5px -5px 10px slategray;
+    ;
+}
+
+#name {
+    margin-top: 20px;
+    font-size: 30px;
+    /* margin-bottom: 5px; */
+}
+
+#quotes {
+    text-align: center;
+}
+
+#proff {
+    font-size: 20px;
+}
+
+#quote1 {
+    margin-top: 30px;
+}
+
+#about button {
+    width: 150px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: darkslategray;
+    font-size: 20px;
+    transition: 1s all linear;
+}
+
+#about button:hover {
+    transform: scale(.7);
+}
