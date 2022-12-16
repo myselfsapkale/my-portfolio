@@ -25,12 +25,22 @@
 .wrapper {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     /* flex-direction: column; */
+}
+
+.skillz-main {
+    display: flex;
+    align-items: flex-end;
 }
 
 #skillz {
     flex: 2;
-    padding: 50px;
+    padding: 0px 100px;
+}
+
+#skillz>div {
+    padding: 5px;
 }
 
 #about {
@@ -83,6 +93,8 @@
 
 #about button {
     width: 150px;
+    border-radius: 10px 29px;
+    border: none;
     padding: 10px;
     color: whitesmoke;
     background-color: darkslategray;
@@ -92,4 +104,177 @@
 
 #about button:hover {
     transform: scale(.7);
+}
+
+
+
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    height: 10px;
+}
+
+.html {
+    background-color: #04AA6D;
+    width: 90%;
+}
+
+.css {
+    background-color: red;
+    width: 85%;
+}
+
+.js {
+    background-color: rgb(77, 116, 215);
+    width: 80%;
+}
+
+.bootstrap {
+    background-color: rgb(91, 215, 77);
+    width: 90%;
+}
+
+.angular {
+    background-color: rgb(215, 77, 148);
+    width: 85%;
+}
+
+.react {
+    background-color: rgb(77, 180, 215);
+    width: 80%;
+}
+
+.node {
+    background-color: rgb(215, 111, 77);
+    width: 80%;
+}
+
+.mysql {
+    background-color: rgb(132, 48, 201);
+    width: 90%;
+}
+
+.sql {
+    background-color: rgb(29, 105, 120);
+    width: 75%;
+}
+
+.mapbox {
+    background-color: rgb(63, 118, 163);
+    width: 80%;
+}
+
+.git {
+    background-color: rgb(89, 17, 94);
+    width: 90%;
+}
+
+/* For mobile device or portrat tablets */
+@media only screen and (max-width: 768px) {
+
+    .skillz-main {
+        display: block;
+    }
+
+    #skillz {
+        padding: 0;
+    }
+
+    #about {
+        padding: 0px;
+        border: none;
+    }
+
+    #about-wrapper {
+        padding: 0;
+    }
+
+    #about-header {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-decoration: underline;
+        border: none;
+    }
+
+    .skillz-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrap {
+        padding: 50px 5px !important;
+    }
+
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    #my-pic {
+        width: 300px !important;
+    }
+
+    .skillz-main {
+        display: block;
+    }
+
+    #skillz {
+        padding: 0;
+    }
+
+    #about {
+        padding: 0px;
+        border: none;
+    }
+
+    #about-wrapper {
+        padding: 0;
+    }
+
+    #about-header {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-decoration: underline;
+        border: none;
+    }
+
+    .skillz-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrap {
+        padding: 50px 105px !important;
+    }
+
+    #my-pic-wrapper {
+        justify-content: center;
+        align-items: center;
+        display: flex
+    }
+
+    #about button {
+        width: 250px;
+        border-radius: 10px 29px;
+        border: none;
+    }
+
 }
