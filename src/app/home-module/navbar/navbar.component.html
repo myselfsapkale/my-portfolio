@@ -88,7 +88,7 @@
     </header>
 
     <!-- Arrow Icon -->
-    <span id="arrow-icon" [ngClass]="showNavItems ? 'arrow-icon-reverse' : ''" (click)="showNavItems = !showNavItems">
+    <span *ngIf="!hideButton" id="arrow-icon" [ngClass]="showNavItems ? 'arrow-icon-reverse' : ''" (click)="showNavItems = !showNavItems">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
