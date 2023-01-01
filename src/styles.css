@@ -32,3 +32,29 @@
     width: 8px;
     height: 8px;
 }
+
+
+/* Button Pulse Effect */
+
+
+/* .pulse_button {
+    animation: pulse_animate 3s linear infinite
+}
+
+@keyframes pulse_animate {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 109, 74, 0.7), 0 0 0 0 rgb(255, 109, 74, 0.7)
+    }
+
+    40% {
+        box-shadow: 0 0 0 50px rgb(255, 109, 74, 0), 0 0 0 0 rgb(255, 109, 74, 0.7)
+    }
+
+    80% {
+        box-shadow: 0 0 0 50px rgb(255, 109, 74, 0), 0 0 0 30px rgb(255, 109, 74, 0)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(255, 109, 74, 0), 0 0 0 30px rgb(255, 109, 74, 0)
+    }
+} */

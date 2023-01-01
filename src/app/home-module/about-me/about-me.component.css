@@ -67,12 +67,10 @@
 #my-pic {
     height: 300px;
     background-color: rebeccapurple;
-    background-image: url('../../../assets/img/developer.jpg');
-    background-position: center;
+    background-image: url('../../../assets/img/pushpendra_sapkale_photo.JPG');
     background-size: cover;
     border-radius: 10px;
-    box-shadow: inset 5px 5px 10px slategray, inset -5px -5px 10px slategray;
-    ;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 #name {
