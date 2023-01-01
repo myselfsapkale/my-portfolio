@@ -19,7 +19,7 @@
     font-size: 50px;
     margin-bottom: 20px;
     border-left: solid rgb(63, 5, 110);
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 #projects-header span {
@@ -134,7 +134,7 @@
         text-align: center;
     }
 
-    .p-flex:not(:first-child){
+    .p-flex:not(:first-child) {
         margin-top: 50px;
     }
 
@@ -165,14 +165,28 @@
         margin-bottom: 30px;
     }
 
-    .project-img{
+    .project-img {
         width: auto;
     }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    #projects-header {
+        padding-left: 20px;
+        font-size: 10px;
+        opacity: 0;
+    }
+
+    .project-header-animation {
+        font-size: 50px !important;
+        transition: all 0.5s linear !important;
+        opacity: 1 !important;
+    }
+
+}
 
 
 /* Medium devices (tablets) */
@@ -189,4 +203,55 @@
         flex-direction: column-reverse;
     }
 
+    #projects-header {
+        padding-left: 20px;
+    }
+
 }
+
+
+
+/* Animation Start */
+
+
+
+.right-swipe-show {
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+
+.right-swipe-hide {
+    transform: translateX(100%);
+}
+
+.left-swipe-show {
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+
+.left-swipe-hide {
+    transform: translateX(-100%);
+}
+
+.button-show-right {
+    transition: all 0.5s 0.5s ease-in;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.button-hide-right {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.button-hide-left {
+    transform: translateX(-100%);
+}
+
+.button-show-left {
+    transition: all 0.5s 0.5s ease;
+    transform: translateX(0);
+}
+
+
+/* Animation Stop */

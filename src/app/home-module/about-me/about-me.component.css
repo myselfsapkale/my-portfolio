@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 }
 
 #about-wrapper {
@@ -11,14 +12,14 @@
     padding: 50px;
 }
 
-#about-header {
+.about-header {
     font-size: 50px;
     margin-bottom: 30px;
     border-left: solid rgb(63, 5, 110);
-    padding-left: 20px;
+    /* padding-left: 20px;  */
 }
 
-#about-header span {
+.about-header span {
     color: rgb(63, 5, 110);
 }
 
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex: 1;
     /* flex-direction: column; */
 }
 
@@ -43,7 +45,7 @@
     padding: 5px;
 }
 
-#about {
+.about {
     flex: 1;
     border: 1px solid darkslategrey;
     padding: 50px;
@@ -91,7 +93,7 @@
     margin-top: 30px;
 }
 
-#about button {
+.about button {
     width: 150px;
     border-radius: 10px 29px;
     border: none;
@@ -102,7 +104,7 @@
     transition: 1s all linear;
 }
 
-#about button:hover {
+.about button:hover {
     transform: scale(.7);
 }
 
@@ -194,7 +196,7 @@
         padding: 0;
     }
 
-    #about {
+    .about {
         padding: 0px;
         border: none;
     }
@@ -203,7 +205,7 @@
         padding: 0;
     }
 
-    #about-header {
+    .about-header {
         font-size: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -238,7 +240,7 @@
         padding: 0;
     }
 
-    #about {
+    .about {
         padding: 0px;
         border: none;
     }
@@ -247,7 +249,7 @@
         padding: 0;
     }
 
-    #about-header {
+    .about-header {
         font-size: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -271,10 +273,166 @@
         display: flex
     }
 
-    #about button {
+    .about button {
         width: 250px;
         border-radius: 10px 29px;
         border: none;
     }
 
 }
+
+/*
+    Animation only be visible in laptop or desktop devices
+*/
+
+/* Laptop and Desktop view */
+@media only screen and (min-width: 992px) {}
+
+    /* Animations Start */
+
+    .skillz-main {
+        overflow: hidden;
+    }
+
+    .about-header {
+        font-size: 10px;
+        padding-left: 20px;
+        opacity: 0;
+    }
+
+    .about-header-show {
+        font-size: 50px;
+        transition: all 0.5s linear;
+        opacity: 1;
+    }
+
+    .wrapper {
+        transform: translateX(-100%);
+    }
+
+    #skillz {
+        transform: translateX(100%);
+    }
+
+    .showWindowEffect {
+        transition: all 0.5s;
+        transform: translateX(0%) !important;
+    }
+
+    .showOpacityEffect {
+        transition: all 3s ease;
+        opacity: 1;
+    }
+
+    .hideOpacityEffect {
+        opacity: 0;
+    }
+
+    .html {
+        width: 0;
+    }
+
+    .htmlwidth {
+        transition: width 5s;
+        transition-timing-function: steps(6, end);
+        width: 90%;
+    }
+
+    .css {
+        width: 0;
+    }
+
+    .csswidth {
+        transition: width 3s;
+        width: 85%;
+        transition-timing-function: cubic-bezier(.19, 1.01, 2, -0.88);
+    }
+
+    .js {
+        width: 0;
+    }
+
+    .jswidth {
+        transition: width 3s;
+        width: 80%;
+    }
+
+    .bootstrap {
+        width: 0;
+    }
+
+    .bootstrapwidth {
+        transition: width 3s;
+        transition-timing-function: steps(2, end);
+        width: 90%;
+    }
+
+    .angular {
+        width: 0;
+    }
+
+    .angularwidth {
+        transition: width 3s;
+        width: 85%;
+    }
+
+    .react {
+        width: 0;
+    }
+
+    .reactwidth {
+        transition: width 3s;
+        transition-timing-function: linear;
+        width: 80%;
+    }
+
+    .node {
+        width: 0;
+    }
+
+    .nodewidth {
+        transition: width 3s;
+        width: 80%;
+    }
+
+    .mysql {
+        width: 0;
+    }
+
+    .mysqlwidth {
+        transition: width 5s;
+        transition-timing-function: ease-in-out;
+        width: 90%;
+    }
+
+    .sql {
+        width: 0;
+    }
+
+    .sqlwidth {
+        transition: width 3s;
+        transition-timing-function: steps(15, end);
+        width: 75%;
+    }
+
+    .mapbox {
+        width: 0;
+    }
+
+    .mapboxwidth {
+        transition: width 4s;
+        transition-timing-function: ease-in;
+        width: 85%;
+    }
+
+    .git {
+        width: 0;
+    }
+
+    .gitwidth {
+        transition: width 1s;
+        transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+        width: 90%;
+    }
+
+    /* Animation Stop */

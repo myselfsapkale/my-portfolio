@@ -1,11 +1,11 @@
 <div id="about-main">
     <div id="about-wrapper">
-        <p id="about-header">ABOUT <span>ME</span></p>
+        <p class="about-header" [ngClass]="showEffect ? 'about-header-show' : ''">ABOUT <span>ME</span></p>
         <div class="skillz-main">
-            <div class="wrapper" style="flex: 1;">
+            <div class="wrapper" [ngClass]="showEffect ? 'showWindowEffect' : ''">
                 <!-- Skillz div -->
                 <!-- About me div -->
-                <div id="about">
+                <div class="about" [ngClass]="showEffect ? 'showOpacityEffect' : 'hideOpacityEffect'">
                     <div id="my-pic-wrapper">
                         <div id="my-pic"></div>
                     </div>
@@ -29,72 +29,72 @@
                     </div>
                 </div>
             </div>
-            <div id="skillz">
-                <div id="wrap">
+            <div id="skillz" [ngClass]="showEffect ? 'showWindowEffect' : ''">
+                <div id="wrap" [ngClass]="showEffect ? 'showOpacityEffect' : 'hideOpacityEffect'">
                     <div>
                         HTML
                         <div class="container">
-                            <div class="skills html">90%</div>
+                            <div class="skills html" [ngClass]="showEffect ? 'htmlwidth' : ''">90%</div>
                         </div>
                     </div>
                     <div>
                         Css
                         <div class="container">
-                            <div class="skills css">85%</div>
+                            <div class="skills css" [ngClass]="showEffect ? 'csswidth' : ''">85%</div>
                         </div>
                     </div>
                     <div>
                         JavaScript
                         <div class="container">
-                            <div class="skills js">80%</div>
+                            <div class="skills js" [ngClass]="showEffect ? 'jswidth' : ''">80%</div>
                         </div>
                     </div>
                     <div>
                         Bootstrap
                         <div class="container">
-                            <div class="skills bootstrap">90%</div>
+                            <div class="skills bootstrap" [ngClass]="showEffect ? 'bootstrapwidth' : ''">90%</div>
                         </div>
                     </div>
                     <div>
                         Angular
                         <div class="container">
-                            <div class="skills angular">85%</div>
+                            <div class="skills angular" [ngClass]="showEffect ? 'angularwidth' : ''">85%</div>
                         </div>
                     </div>
                     <div>
                         ReactJs
                         <div class="container">
-                            <div class="skills react">80%</div>
+                            <div class="skills react" [ngClass]="showEffect ? 'reactwidth' : ''">80%</div>
                         </div>
                     </div>
                     <div>
                         NodeJs
                         <div class="container">
-                            <div class="skills node">80%</div>
+                            <div class="skills node" [ngClass]="showEffect ? 'nodewidth' : ''">80%</div>
                         </div>
                     </div>
                     <div>
                         MySql
                         <div class="container">
-                            <div class="skills mysql">90%</div>
+                            <div class="skills mysql" [ngClass]="showEffect ? 'mysqlwidth' : ''">90%</div>
                         </div>
                     </div>
                     <div>
                         Sql
                         <div class="container">
-                            <div class="skills sql">75%</div>
+                            <div class="skills sql" [ngClass]="showEffect ? 'sqlwidth' : ''">75%</div>
                         </div>
                     </div>
                     <div>
                         Mapbox
                         <div class="container">
-                            <div class="skills mapbox">80%</div>
+                            <div class="skills mapbox" [ngClass]="showEffect ? 'mapboxwidth' : ''">80%</div>
                         </div>
                     </div>
                     <div>
                         Git / Github
                         <div class="container">
-                            <div class="skills git">90%</div>
+                            <div class="skills git" [ngClass]="showEffect ? 'gitwidth' : ''">90%</div>
                         </div>
                     </div>
                 </div>

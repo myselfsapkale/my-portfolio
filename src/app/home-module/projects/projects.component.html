@@ -1,9 +1,9 @@
 <div id="projects-main">
     <div id="projects-wrapper">
-        <p id="projects-header">MY <span>PROJECTS</span></p>
+        <p id="projects-header" [ngClass]="showEffect ? 'project-header-animation' : ''" >MY <span>PROJECTS</span></p>
         <div class="projects-inner">
             <!-- First Project Details -->
-            <div class="p-flex">
+            <div class="p-flex" [ngClass]="showEffect ? 'right-swipe-show' : 'right-swipe-hide'">
                 <!-- Image Div -->
                 <a href="https://geojsoncreator.com/" target="_blank" class="img-div">
                     <div id="geojson-creator" class="project-img"></div>
@@ -15,7 +15,7 @@
                     online
                     <p class="mt-10"><span>Used Technology : Html, Css, Bootstrap, TypeScript, Angular, Maplibre</span>
                     </p>
-                    <div class="mt-10 btn-grp">
+                    <div class="mt-10 btn-grp" [ngClass]="showEffect ? 'button-show-right' : 'button-hide-right'">
                         <a href="https://geojsoncreator.com/" target="_blank">
                             <button>
                                 <span>
@@ -49,14 +49,14 @@
             </div>
 
             <!-- Second Project Details -->
-            <div class="p-flex p-flex-2">
+            <div class="p-flex p-flex-2" [ngClass]="showEffect ? 'left-swipe-show' : 'left-swipe-hide'">
                 <div style="flex: 2">
                     <p class="mb-10 project-heading">Bike Rental System</p>
                     bike rental is a single page web application where user can book bikes on rent in a particular
                     location here we have two modules one for admin and second for users
                     <p class="mt-10"><span>Used Technology : Html, Css, Bootstrap, JavaScript, React, NodeJs, mySql,
                             ExpressJs</span></p>
-                    <div class="mt-10 btn-grp">
+                    <div class="mt-10 btn-grp" [ngClass]="showEffect ? 'button-show-left' : 'button-hide-left'">
                         <a href="https://bikerentalui.web.app/" target="_blank">
                             <button>
                                 <span>
@@ -94,7 +94,7 @@
             </div>
 
             <!-- Second Project Details -->
-            <div class="p-flex">
+            <div class="p-flex" [ngClass]="showEffect ? 'right-swipe-show' : 'right-swipe-hide'">
                 <!-- Image Div -->
                 <a href="" class="img-div">
                     <div id="portfolio" class="project-img"></div>
@@ -103,7 +103,7 @@
                     <p class="mb-10 project-heading">My Portfolio</p>
                     This is my portfolio website which you are visiting right now .....
                     <p class="mt-10"><span>Used Technology : Html, Css, TypeScript, Angular</span></p>
-                    <div class="mt-10 btn-grp">
+                    <div class="mt-10 btn-grp" [ngClass]="showEffect ? 'button-show-right' : 'button-hide-right'">
                         <a routerLink="/">
                             <button>
                                 <span>

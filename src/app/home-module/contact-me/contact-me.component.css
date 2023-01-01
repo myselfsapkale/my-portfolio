@@ -5,7 +5,8 @@
     align-items: center;
     justify-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: auto;
+    overflow: hidden;
+    /* overflow: auto; */
 }
 
 #img {
@@ -245,3 +246,31 @@
     }
 
 }
+
+/* Animation Start */
+
+.show-phone-info {
+    transition: all 2s ease;
+    transform: translateX(0);
+}
+
+.show-email-info {
+    transition: all 1.5s ease;
+    transform: translateX(0);
+}
+
+.show-address-info {
+    transition: all 1s ease;
+    transform: translateX(0);
+}
+
+.show-social-info {
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+
+.hide-card{
+    transform: translateX(100%);
+}
+
+/* Animation Stop */

@@ -8,7 +8,7 @@
 
             <div>
                 <!-- Phone Info -->
-                <div>
+                <div [ngClass]="showEffect ? 'show-phone-info' : 'hide-card'">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                             class="bi bi-telephone" viewBox="0 0 16 16">
@@ -23,7 +23,7 @@
                 </div>
 
                 <!-- Email Info -->
-                <div>
+                <div [ngClass]="showEffect ? 'show-email-info' : 'hide-card'">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                             class="bi bi-envelope-check" viewBox="0 0 16 16">
@@ -44,7 +44,7 @@
 
             <div>
                 <!-- Address Info -->
-                <div>
+                <div [ngClass]="showEffect ? 'show-address-info' : 'hide-card'">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                             class="bi bi-map" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- Social Info -->
-                <div>
+                <div [ngClass]="showEffect ? 'show-social-info' : 'hide-card'">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                             class="bi bi-chat" viewBox="0 0 16 16">
