@@ -11,8 +11,8 @@
 #projects-wrapper {
     height: 100%;
     width: 100%;
-    overflow: auto;
     padding: 50px;
+    overflow-x: hidden;
 }
 
 #projects-header {
