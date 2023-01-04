@@ -276,6 +276,10 @@
         border: none;
     }
 
+    #quotes{
+        padding: 0px 100px;
+    }
+
 }
 
 /*
@@ -284,6 +288,10 @@
 
 /* Laptop and Desktop view */
 @media only screen and (min-width: 992px) {}
+
+
+
+@media only screen and (min-width: 568px) {
 
     /* Animations Start */
 
@@ -419,7 +427,7 @@
     .mapboxwidth {
         transition: width 4s;
         transition-timing-function: ease-in;
-        width: 85%;
+        width: 80%;
     }
 
     .git {
@@ -433,3 +441,4 @@
     }
 
     /* Animation Stop */
+}

@@ -180,12 +180,6 @@
         opacity: 0;
     }
 
-    .project-header-animation {
-        font-size: 50px !important;
-        transition: all 0.5s linear !important;
-        opacity: 1 !important;
-    }
-
 }
 
 
@@ -210,48 +204,59 @@
 }
 
 
+@media only screen and (min-width: 568px) {
 
-/* Animation Start */
+    /* Animation Start */
 
 
 
-.right-swipe-show {
-    transition: all 0.5s;
-    transform: translateX(0);
+    .right-swipe-show {
+        transition: all 0.5s;
+        transform: translateX(0);
+    }
+
+    .right-swipe-hide {
+        transform: translateX(100%);
+    }
+
+    .left-swipe-show {
+        transition: all 0.5s;
+        transform: translateX(0);
+    }
+
+    .left-swipe-hide {
+        transform: translateX(-100%);
+    }
+
+    .button-show-right {
+        transition: all 0.5s 0.5s ease-in;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .button-hide-right {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .button-hide-left {
+        transform: translateX(-100%);
+    }
+
+    .button-show-left {
+        transition: all 0.5s 0.5s ease;
+        transform: translateX(0);
+    }
+
+    #projects-header {
+        font-size: 10px;
+    }
+
+    .project-header-animation {
+        font-size: 50px !important;
+        transition: all 0.5s linear !important;
+        opacity: 1 !important;
+    }
+
+    /* Animation Stop */
 }
-
-.right-swipe-hide {
-    transform: translateX(100%);
-}
-
-.left-swipe-show {
-    transition: all 0.5s;
-    transform: translateX(0);
-}
-
-.left-swipe-hide {
-    transform: translateX(-100%);
-}
-
-.button-show-right {
-    transition: all 0.5s 0.5s ease-in;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.button-hide-right {
-    opacity: 0;
-    transform: translateX(100%);
-}
-
-.button-hide-left {
-    transform: translateX(-100%);
-}
-
-.button-show-left {
-    transition: all 0.5s 0.5s ease;
-    transform: translateX(0);
-}
-
-
-/* Animation Stop */
