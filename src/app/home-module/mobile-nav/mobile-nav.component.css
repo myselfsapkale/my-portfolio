@@ -1,0 +1,42 @@
+.modal-box {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-line:is(:first-child){
+    margin-left: 37%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-line:not(:first-child){
+    margin-top: 10px;
+    margin-left: 37%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background-color: rebeccapurple;
+    padding: 8px;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}

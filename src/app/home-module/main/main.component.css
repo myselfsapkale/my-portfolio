@@ -5,3 +5,21 @@
 #child-container {
     width: 100%;
 }
+
+.nav-bar {
+    display: block;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+}

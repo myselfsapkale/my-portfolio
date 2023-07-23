@@ -18,6 +18,10 @@
     margin-left: 10px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar-thumb {
     background: #663399;
     ;

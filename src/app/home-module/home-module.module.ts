@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     MainComponent,
     ProjectsComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    MobileNavComponent
   ],
   imports: [
     CommonModule,
