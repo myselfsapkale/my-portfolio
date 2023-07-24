@@ -1,444 +1,447 @@
 #about-main {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
 
 #about-wrapper {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    padding: 50px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 50px;
 }
 
 .about-header {
-    font-size: 50px;
-    margin-bottom: 30px;
-    border-left: solid rgb(63, 5, 110);
-    /* padding-left: 20px;  */
+  font-size: 50px;
+  margin-bottom: 30px;
+  border-left: solid rgb(63, 5, 110);
+  /* padding-left: 20px;  */
 }
 
 .about-header span {
-    color: rgb(63, 5, 110);
+  color: rgb(63, 5, 110);
 }
 
 .wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1;
-    /* flex-direction: column; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  /* flex-direction: column; */
 }
 
 .skillz-main {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #skillz {
-    flex: 2;
-    padding: 0px 100px;
+  flex: 2;
+  padding: 0px 100px;
 }
 
-#skillz>div {
-    padding: 5px;
+#skillz > div {
+  padding: 5px;
 }
 
 .about {
-    flex: 1;
-    border: 1px solid darkslategrey;
-    padding: 50px;
+  flex: 1;
+  border: 1px solid darkslategrey;
+  padding: 50px;
 }
 
 .my-quality {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .my-quality-wrapper {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #my-pic {
-    height: 300px;
-    background-color: rebeccapurple;
-    background-image: url('../../../assets/img/pushpendra_sapkale_photo.JPG');
-    background-size: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  height: 300px;
+  background-color: rebeccapurple;
+  background-image: url("../../../assets/img/pushpendra_sapkale_photo.JPG");
+  background-size: 100%;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 }
 
 #name {
-    margin-top: 20px;
-    font-size: 30px;
-    /* margin-bottom: 5px; */
+  margin-top: 20px;
+  font-size: 30px;
+  /* margin-bottom: 5px; */
 }
 
 #quotes {
-    text-align: center;
+  text-align: center;
 }
 
 #proff {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #quote1 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .about button {
-    width: 150px;
-    border-radius: 10px 29px;
-    border: none;
-    padding: 10px;
-    color: whitesmoke;
-    background-color: darkslategray;
-    font-size: 20px;
-    transition: 1s all linear;
+  width: 150px;
+  border-radius: 10px 29px;
+  border: none;
+  padding: 10px;
+  color: whitesmoke;
+  background-color: darkslategray;
+  font-size: 20px;
+  transition: 1s all linear;
 }
 
 .about button:hover {
-    transform: scale(.7);
+  transform: scale(0.7);
 }
 
-
-
-
 .container {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    height: 10px;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  height: 10px;
 }
 
 .html {
-    background-color: #04AA6D;
-    width: 90%;
+  background-color: #04aa6d;
+  width: 90%;
 }
 
 .css {
-    background-color: red;
-    width: 85%;
+  background-color: red;
+  width: 85%;
 }
 
 .js {
-    background-color: rgb(77, 116, 215);
-    width: 80%;
+  background-color: rgb(77, 116, 215);
+  width: 80%;
 }
 
 .bootstrap {
-    background-color: rgb(91, 215, 77);
-    width: 90%;
+  background-color: rgb(91, 215, 77);
+  width: 90%;
 }
 
 .angular {
-    background-color: rgb(215, 77, 148);
-    width: 85%;
+  background-color: rgb(215, 77, 148);
+  width: 85%;
 }
 
 .react {
-    background-color: rgb(77, 180, 215);
-    width: 80%;
+  background-color: rgb(77, 180, 215);
+  width: 80%;
 }
 
 .node {
-    background-color: rgb(215, 111, 77);
-    width: 80%;
+  background-color: rgb(215, 111, 77);
+  width: 80%;
 }
 
 .mysql {
-    background-color: rgb(132, 48, 201);
-    width: 90%;
+  background-color: rgb(132, 48, 201);
+  width: 90%;
 }
 
 .sql {
-    background-color: rgb(29, 105, 120);
-    width: 75%;
+  background-color: rgb(29, 105, 120);
+  width: 75%;
 }
 
 .mapbox {
-    background-color: rgb(63, 118, 163);
-    width: 80%;
+  background-color: rgb(63, 118, 163);
+  width: 80%;
 }
 
 .git {
-    background-color: rgb(89, 17, 94);
-    width: 90%;
+  background-color: rgb(89, 17, 94);
+  width: 90%;
 }
 
 /* For mobile device or portrat tablets */
 @media only screen and (max-width: 768px) {
+  .skillz-main {
+    display: block;
+  }
 
-    .skillz-main {
-        display: block;
-    }
+  #skillz {
+    padding: 0;
+  }
 
-    #skillz {
-        padding: 0;
-    }
+  .about {
+    padding: 0px;
+    border: none;
+  }
 
-    .about {
-        padding: 0px;
-        border: none;
-    }
+  #about-wrapper {
+    padding: 0;
+  }
 
-    #about-wrapper {
-        padding: 0;
-    }
+  .about-header {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+  }
 
-    .about-header {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        text-decoration: underline;
-        border: none;
-    }
+  .skillz-main {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .skillz-main {
-        align-items: center;
-        justify-content: center;
-    }
+  #wrap {
+    padding: 50px 5px !important;
+  }
 
-    #wrap {
-        padding: 50px 5px !important;
-    }
+  #my-pic-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  #my-pic {
+    width: 300px !important;
+  }
 }
 
 /* Medium devices (tablets) */
 @media only screen and (max-width: 992px) and (min-width: 768px) {
+  #my-pic {
+    width: 300px !important;
+  }
 
-    #my-pic {
-        width: 300px !important;
-    }
+  .skillz-main {
+    display: block;
+  }
 
-    .skillz-main {
-        display: block;
-    }
+  #skillz {
+    padding: 0;
+  }
 
-    #skillz {
-        padding: 0;
-    }
+  .about {
+    padding: 0px;
+    border: none;
+  }
 
-    .about {
-        padding: 0px;
-        border: none;
-    }
+  #about-wrapper {
+    padding: 0;
+  }
 
-    #about-wrapper {
-        padding: 0;
-    }
+  .about-header {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+  }
 
-    .about-header {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        text-decoration: underline;
-        border: none;
-    }
+  .skillz-main {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .skillz-main {
-        align-items: center;
-        justify-content: center;
-    }
+  #wrap {
+    padding: 50px 105px !important;
+  }
 
-    #wrap {
-        padding: 50px 105px !important;
-    }
+  #my-pic-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
-    #my-pic-wrapper {
-        justify-content: center;
-        align-items: center;
-        display: flex
-    }
+  .about button {
+    width: 250px;
+    border-radius: 10px 29px;
+    border: none;
+  }
 
-    .about button {
-        width: 250px;
-        border-radius: 10px 29px;
-        border: none;
-    }
-
-    #quotes{
-        padding: 0px 100px;
-    }
-
+  #quotes {
+    padding: 0px 100px;
+  }
 }
-
-/*
-    Animation only be visible in laptop or desktop devices
-*/
 
 /* Laptop and Desktop view */
-@media only screen and (min-width: 992px) {}
-
-
-
-@media only screen and (min-width: 568px) {
-
-    /* Animations Start */
-
-    .skillz-main {
-        overflow: hidden;
-    }
-
-    .about-header {
-        font-size: 10px;
-        padding-left: 20px;
-        opacity: 0;
-    }
-
-    .about-header-show {
-        font-size: 50px;
-        transition: all 0.5s linear;
-        opacity: 1;
-    }
-
-    .wrapper {
-        transform: translateX(-100%);
-    }
-
-    #skillz {
-        transform: translateX(100%);
-    }
-
-    .showWindowEffect {
-        transition: all 0.5s;
-        transform: translateX(0%) !important;
-    }
-
-    .showOpacityEffect {
-        transition: all 3s ease;
-        opacity: 1;
-    }
-
-    .hideOpacityEffect {
-        opacity: 0;
-    }
-
-    .html {
-        width: 0;
-    }
-
-    .htmlwidth {
-        transition: width 5s;
-        transition-timing-function: steps(6, end);
-        width: 90%;
-    }
-
-    .css {
-        width: 0;
-    }
-
-    .csswidth {
-        transition: width 3s;
-        width: 85%;
-        transition-timing-function: cubic-bezier(.19, 1.01, 2, -0.88);
-    }
-
-    .js {
-        width: 0;
-    }
-
-    .jswidth {
-        transition: width 3s;
-        width: 80%;
-    }
-
-    .bootstrap {
-        width: 0;
-    }
-
-    .bootstrapwidth {
-        transition: width 3s;
-        transition-timing-function: steps(2, end);
-        width: 90%;
-    }
-
-    .angular {
-        width: 0;
-    }
-
-    .angularwidth {
-        transition: width 3s;
-        width: 85%;
-    }
-
-    .react {
-        width: 0;
-    }
-
-    .reactwidth {
-        transition: width 3s;
-        transition-timing-function: linear;
-        width: 80%;
-    }
-
-    .node {
-        width: 0;
-    }
-
-    .nodewidth {
-        transition: width 3s;
-        width: 80%;
-    }
-
-    .mysql {
-        width: 0;
-    }
-
-    .mysqlwidth {
-        transition: width 5s;
-        transition-timing-function: ease-in-out;
-        width: 90%;
-    }
-
-    .sql {
-        width: 0;
-    }
-
-    .sqlwidth {
-        transition: width 3s;
-        transition-timing-function: steps(15, end);
-        width: 75%;
-    }
-
-    .mapbox {
-        width: 0;
-    }
-
-    .mapboxwidth {
-        transition: width 4s;
-        transition-timing-function: ease-in;
-        width: 80%;
-    }
-
-    .git {
-        width: 0;
-    }
-
-    .gitwidth {
-        transition: width 1s;
-        transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
-        width: 90%;
-    }
-
-    /* Animation Stop */
+@media only screen and (min-width: 992px) {
 }
+
+/* Animations Start */
+
+.skillz-main {
+  overflow: hidden;
+}
+
+.about-header {
+  font-size: 10px;
+  padding-left: 20px;
+  opacity: 0;
+}
+
+.about-header-show {
+  font-size: 50px;
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+
+.wrapper {
+  transform: translateX(-100%);
+}
+
+#skillz {
+  transform: translateX(100%);
+}
+
+.showWindowEffect {
+  transition: all 0.5s;
+  transform: translateX(0%) !important;
+}
+
+.showOpacityEffect {
+  transition: all 3s ease;
+  opacity: 1;
+}
+
+.hideOpacityEffect {
+  opacity: 0;
+}
+
+.html {
+  width: 0;
+}
+
+.htmlwidth {
+  transition: width 5s;
+  transition-timing-function: steps(6, end);
+  width: 90%;
+}
+
+.css {
+  width: 0;
+}
+
+.csswidth {
+  transition: width 3s;
+  width: 85%;
+  transition-timing-function: cubic-bezier(0.19, 1.01, 2, -0.88);
+}
+
+.js {
+  width: 0;
+}
+
+.jswidth {
+  transition: width 3s;
+  width: 80%;
+}
+
+.bootstrap {
+  width: 0;
+}
+
+.bootstrapwidth {
+  transition: width 3s;
+  transition-timing-function: steps(2, end);
+  width: 90%;
+}
+
+.angular {
+  width: 0;
+}
+
+.angularwidth {
+  transition: width 3s;
+  width: 85%;
+}
+
+.react {
+  width: 0;
+}
+
+.reactwidth {
+  transition: width 3s;
+  transition-timing-function: linear;
+  width: 80%;
+}
+
+.node {
+  width: 0;
+}
+
+.nodewidth {
+  transition: width 3s;
+  width: 80%;
+}
+
+.mysql {
+  width: 0;
+}
+
+.mysqlwidth {
+  transition: width 5s;
+  transition-timing-function: ease-in-out;
+  width: 90%;
+}
+
+.sql {
+  width: 0;
+}
+
+.sqlwidth {
+  transition: width 3s;
+  transition-timing-function: steps(15, end);
+  width: 75%;
+}
+
+.mapbox {
+  width: 0;
+}
+
+.mapboxwidth {
+  transition: width 4s;
+  transition-timing-function: ease-in;
+  width: 80%;
+}
+
+.git {
+  width: 0;
+}
+
+.gitwidth {
+  transition: width 1s;
+  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  width: 90%;
+}
+
+/* Animation Stop */

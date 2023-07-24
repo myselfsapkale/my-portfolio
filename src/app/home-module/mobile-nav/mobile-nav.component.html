@@ -54,7 +54,7 @@
     <div class="modal-wrapper">
 
         <!-- Home Icon -->
-        <span routerLink="home" (click)="showModal = false" [ngStyle]="activeRoute == 'home' ? {'color': 'crimson'} : {}" class="nav-line">
+        <span routerLink="home" (click)="showModal = false" [ngStyle]="activeRoute == 'home' ? {'color': 'crimson'} : {}" class="nav-line pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house"
                 viewBox="0 0 16 16">
                 <path
@@ -64,7 +64,7 @@
         </span>
 
         <!-- Projects Icon -->
-        <span routerLink="projects" (click)="showModal = false" [ngStyle]="activeRoute == 'projects' ? {'color': 'crimson'} : {}" class="nav-line">
+        <span routerLink="projects" (click)="showModal = false" [ngStyle]="activeRoute == 'projects' ? {'color': 'crimson'} : {}" class="nav-line pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-folder2-open" viewBox="0 0 16 16">
                 <path
@@ -74,7 +74,7 @@
         </span>
 
         <!-- About Me Icon -->
-        <span routerLink="about-me" (click)="showModal = false" [ngStyle]="activeRoute == 'about-me' ? {'color': 'crimson'} : {}" class="nav-line">
+        <span routerLink="about-me" (click)="showModal = false" [ngStyle]="activeRoute == 'about-me' ? {'color': 'crimson'} : {}" class="nav-line pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person"
                 viewBox="0 0 16 16">
                 <path
@@ -84,7 +84,7 @@
         </span>
 
         <!-- Contact Me Icon -->
-        <span routerLink="contact-me" (click)="showModal = false" class="nav-line">
+        <span routerLink="contact-me" (click)="showModal = false" class="nav-line pointer">
             <svg [ngStyle]="activeRoute == 'contact-me' ? {'color': 'crimson'} : {}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at"
                 viewBox="0 0 16 16">
                 <path
@@ -96,7 +96,7 @@
         </span>
 
         <!-- Resume Icon -->
-        <span class="nav-line" routerLink="resume" (click)="showModal = false">
+        <span class="nav-line pointer" routerLink="resume" (click)="showModal = false">
             <svg [ngStyle]="activeRoute == 'resume' ? {'color': 'crimson'} : {}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-file-earmark-person" viewBox="0 0 16 16">
                 <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -106,7 +106,7 @@
             <span [ngStyle]="activeRoute == 'resume' ? {'color': 'crimson'} : {}"> Resume</span>
         </span>
 
-        <span class="nav-line">
+        <span (click)="jumpToGithub()" class="nav-line pointer">
             <svg [ngStyle]="activeRoute == 'github' ? {'color': 'crimson'} : {}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github"
                 viewBox="0 0 16 16">
                 <path
