@@ -1,8 +1,80 @@
 <div id="projects-main">
     <div id="projects-wrapper">
-        <p id="projects-header" [ngClass]="showEffect ? 'project-header-animation' : ''" >MY <span>PROJECTS</span></p>
+        <p id="projects-header" [ngClass]="showEffect ? 'project-header-animation' : ''">MY <span>PROJECTS</span></p>
         <div class="projects-inner">
+
             <!-- First Project Details -->
+            <div class="p-flex" [ngClass]="showEffect ? 'right-swipe-show' : 'right-swipe-hide'">
+                <!-- Image Div -->
+                <a href="https://map.igismap.com/" target="_blank" class="img-div">
+                    <div id="igismap" class="project-img"></div>
+                </a>
+                <!-- Discription -->
+                <div style="flex: 2">
+                    <p class="mb-10 project-heading">IGISMAP</p>
+                    User can do GIS mapping on a web application, where we
+                    have several tools to make gis mapping easy,
+                    My involvement in the project was to develop user interface
+                    and handle api integration from client side also i did research on mapbox and turf.js library for
+                    developing new features in our webapplication
+                    <p class="mt-10"><span>Used Technology : Html, Css, Angular Material, Angular Flex-Layout,
+                            TypeScript, Angular, Maplibre, Mapbox, Turf.js</span>
+                    </p>
+                    <div class="mt-10 btn-grp" [ngClass]="showEffect ? 'button-show-right' : 'button-hide-right'">
+                        <a href="https://map.igismap.com/" target="_blank">
+                            <button>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    Prview
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Project Details -->
+            <div class="p-flex p-flex-2" [ngClass]="showEffect ? 'left-swipe-show' : 'left-swipe-hide'">
+                <div style="flex: 2">
+                    <p class="mb-10 project-heading">Xcellen</p>
+                    Xcellen Survey Tool is an angular based web application
+                    where pharma companies can conduct surveys for their
+                    products get report, add validations, set new resources and
+                    can do alot of things for increasing productivity from here.
+                    I'm working as a full stack developer here
+                    <p class="mt-10"><span>Used Technology : Html, Css, Bootstrap, JavaScript, NodeJs, mySql,
+                            ExpressJs</span></p>
+                    <div class="mt-10 btn-grp" [ngClass]="showEffect ? 'button-show-left' : 'button-hide-left'">
+                        <a href="https://www.xcellen.com/" target="_blank">
+                            <button>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    Prview
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Image Div -->
+                <a href="https://www.xcellen.com/" target="_blank" class="img-div">
+                    <div id="xcellen" class="project-img"></div>
+                </a>
+            </div>
+
+
+            <!-- Third Project Details -->
             <div class="p-flex" [ngClass]="showEffect ? 'right-swipe-show' : 'right-swipe-hide'">
                 <!-- Image Div -->
                 <a href="https://geojsoncreator.com/" target="_blank" class="img-div">
@@ -48,7 +120,7 @@
                 </div>
             </div>
 
-            <!-- Second Project Details -->
+            <!-- Fourth Project Details -->
             <div class="p-flex p-flex-2" [ngClass]="showEffect ? 'left-swipe-show' : 'left-swipe-hide'">
                 <div style="flex: 2">
                     <p class="mb-10 project-heading">Bike Rental System</p>
@@ -93,7 +165,7 @@
                 </a>
             </div>
 
-            <!-- Second Project Details -->
+            <!-- Fifth Project Details -->
             <div class="p-flex" [ngClass]="showEffect ? 'right-swipe-show' : 'right-swipe-hide'">
                 <!-- Image Div -->
                 <a href="" class="img-div">

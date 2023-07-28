@@ -32,8 +32,28 @@
     gap: 30px;
 }
 
+#igismap {
+    background-image: url('../../../assets/img/igismap.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    border: 1px solid gray;
+}
+
 #geojson-creator {
     background-image: url('../../../assets/img/geojson-creator.jpg');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+    border: 1px solid gray;
+}
+
+#xcellen {
+    background-image: url('../../../assets/img/xcellen.jpg');
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;

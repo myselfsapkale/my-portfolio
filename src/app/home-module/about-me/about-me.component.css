@@ -67,7 +67,7 @@
 #my-pic {
   height: 300px;
   background-color: rebeccapurple;
-  background-image: url("../../../assets/img/pushpendra_sapkale_photo.JPG");
+  background-image: url("../../../assets/img/pushpendra_sapkale_photo.jpg");
   background-size: 100%;
   clip-path: polygon(
     0% 0%,
@@ -150,6 +150,11 @@
 .bootstrap {
   background-color: rgb(91, 215, 77);
   width: 90%;
+}
+
+.angular-material {
+  background-color: rgb(194, 187, 92);
+  width: 80%;
 }
 
 .angular {
@@ -343,7 +348,7 @@
 
 .htmlwidth {
   transition: width 5s;
-  transition-timing-function: steps(6, end);
+  transition-timing-function: linear;
   width: 90%;
 }
 
@@ -374,6 +379,16 @@
   transition: width 3s;
   transition-timing-function: steps(2, end);
   width: 90%;
+}
+
+.angular-material{
+  width: 0;
+}
+
+.angularmaterialwidth {
+  transition: width 3s;
+  transition-timing-function: cubic-bezier(0, 0, 0.8, 1);
+  width: 80%;
 }
 
 .angular {
