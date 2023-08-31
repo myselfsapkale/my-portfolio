@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg sticky-top" [ngClass]="isDarkMode ? 'dark-mode' : ''">
+  <a class="navbar-brand fw-bolder text-uppercase" routerLink="">Sapkale.</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active-nav">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/experience" routerLinkActive="active-nav">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/my-skillz" routerLinkActive="active-nav">My Skillz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/projects" routerLinkActive="active-nav">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/contacts" routerLinkActive="active-nav">Contact</a>
+      </li>
+
+      <!-- Github icon is here -->
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" target="_blank" href="https://github.com/pushpendra-sapkale-dev">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+
+      <!-- Light and dark mode icons here -->
+      <li class="nav-item nightMode cursor-pointer">
+        <a class="nav-link" aria-current="page" (click)="changeMode()">
+          <i class="fa fa-moon-o" aria-hidden="true" *ngIf="!isDarkMode"></i>
+          <i class="fa fa-sun-o" aria-hidden="true" *ngIf="isDarkMode"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

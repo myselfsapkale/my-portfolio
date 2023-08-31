@@ -1,0 +1,104 @@
+#home-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode #job-role {
+    color: rgb(93, 208, 254);
+}
+
+#job-role {
+    color: blueviolet;
+}
+
+.btn-g {
+    display: flex;
+}
+
+.btn-g .btn {
+    width: 10rem;
+}
+
+.light-mode .contact-icons {
+    color: #0a1b2a
+}
+
+.dark-mode .contact-icons i:hover {
+    color: rgb(93, 208, 254);
+}
+
+.contact-icons i:hover {
+    color: blueviolet;
+}
+
+#my-pic {
+    background-image: url('../../assets/img/bhiya3.png');
+    background-repeat: no-repeat;
+}
+
+/* For portrait mobile device */
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+
+    #my-pic {
+        width: 300px;
+        background-position: top;
+        background-size: 100%;
+    }
+
+    #home-wrapper {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 20px;
+    }
+
+    .btn-g {
+        justify-content: center;
+    }
+
+    .btn-g .btn {
+        width: 7rem;
+    }
+
+}
+
+/* For portrait tablets */
+@media only screen and (min-width: 577px) and (max-width: 811px) and (orientation: portrait) {
+
+    #my-pic {
+        width: 500px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    #home-wrapper {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 40px;
+    }
+
+    .btn-g {
+        justify-content: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1283px) and (orientation : landscape) {
+
+    #my-pic {
+        height: 40rem;
+        margin-left: 2rem;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1284px) {
+
+    #my-pic {
+        height: 40rem;
+        margin-left: 200px;
+    }
+
+}

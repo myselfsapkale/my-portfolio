@@ -1,0 +1,32 @@
+.nightMode {
+    width: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+/* Here we have all the global styles related dark mode */
+.dark-mode .fa {
+    color: aliceblue;
+}
+
+.dark-mode a {
+    color: aliceblue;
+}
+
+.dark-mode a:hover {
+    color: rgb(93, 208, 254);
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.dark-mode .active-nav {
+    color: rgb(93, 208, 254);
+}
+
+.active-nav {
+    color: blueviolet;
+}

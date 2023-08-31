@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { CommonServiceService } from './services/common-service.service';
+import { Component, OnDestroy } from '@angular/core';
+import { CommonServiceService } from '../services/common-service.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
 })
-export class AppComponent {
-  title = 'my-portfolio';
+export class HomeComponent implements OnDestroy {
   isDarkMode: boolean = true;
   subscription: Subscription;
 
