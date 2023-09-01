@@ -6,10 +6,12 @@
 
 .dark-mode #job-role {
     color: rgb(93, 208, 254);
+    font-weight: bold;
 }
 
 #job-role {
     color: blueviolet;
+    font-weight: bold;
 }
 
 .btn-g {
@@ -18,6 +20,7 @@
 
 .btn-g .btn {
     width: 10rem;
+    font-weight: bold;
 }
 
 .light-mode .contact-icons {
