@@ -13,6 +13,7 @@ export class AppComponent {
   subscription: Subscription;
 
   constructor(private _commonService: CommonServiceService) {
+    window.localStorage.setItem('isDarkMode', 'true'); // By Default The Theme Will Be Dark
     this.subscription = _commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
     });

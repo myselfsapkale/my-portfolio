@@ -15,6 +15,11 @@ export class HomeComponent implements OnDestroy {
     this.subscription = _commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
     });
+    if (window.localStorage.getItem('isDarkMode') == 'true') {
+      this.isDarkMode = true;
+    } else {
+      this.isDarkMode = false;
+    }
   }
 
   ngOnDestroy(): void {

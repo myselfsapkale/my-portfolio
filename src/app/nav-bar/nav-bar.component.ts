@@ -13,6 +13,7 @@ export class NavBarComponent {
   changeMode() {
     this.isDarkMode = !this.isDarkMode;
     this._commonService.changeLightDarkModeToggler(this.isDarkMode);
+    window.localStorage.setItem('isDarkMode', this.isDarkMode ? 'true' : 'false');
   }
 
 }
