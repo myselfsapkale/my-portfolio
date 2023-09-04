@@ -16,17 +16,17 @@
 }
 
 .dark-mode a:hover {
-    color: rgb(93, 208, 254);
+    color: #5dd0fe;
 }
 
 a:hover {
-    color: blueviolet;
+    color: #8a2be2;
 }
 
 .dark-mode .active-nav {
-    color: rgb(93, 208, 254);
+    color: #5dd0fe;
 }
 
 .active-nav {
-    color: blueviolet;
+    color: #8a2be2;
 }

@@ -1,0 +1,153 @@
+#my-skillz-wrapper {
+    height: 100vh;
+}
+
+.skills {
+    text-align: right;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    height: 14px;
+    width: 0;
+}
+
+.skills-wrapper {
+    background-color: lightgray;
+    border-radius: 0 20px 20px 0;
+}
+
+.html {
+    transition: 2s;
+    transition-timing-function: linear;
+    background-color: #04aa6d;
+    width: 90%;
+}
+
+.css {
+    transition: 2s;
+    transition-timing-function: cubic-bezier(0.19, 1.01, 2, -0.88);
+    background-color: #aa040a;
+    width: 85%;
+}
+
+.js {
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+    background-color: #4d74d7;
+    width: 90%;
+}
+
+.ts {
+    transition: 3s;
+    transition-timing-function: ease-in;
+    background-color: #13aa85;
+    width: 80%;
+}
+
+.es {
+    transition: 3s;
+    transition-timing-function: ease-in-out;
+    background-color: #da8321;
+    width: 90%;
+}
+
+.bootstrap {
+    transition: width 2s;
+    transition-timing-function: steps(3, end);
+    background-color: #5bd74d;
+    width: 90%;
+}
+
+.angular-material {
+    transition: width 3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.8, 1);
+    background-color: #c2bb5c;
+    width: 80%;
+}
+
+.angular {
+    transition: width 3s;
+    background-color: #d74d94;
+    width: 85%;
+}
+
+.ag-grid {
+    transition: width 3s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: #5b5a9a;
+    width: 80%;
+}
+
+.node {
+    background-color: #d76f4d;
+    width: 80%;
+    transition: width 3s;
+}
+
+.express {
+    background-color: #5bd795;
+    width: 90%;
+    transition: width 3s;
+}
+
+.mysql {
+    transition: width 5s;
+    transition-timing-function: ease-in-out;
+    background-color: #8430c9;
+    width: 90%;
+}
+
+.sql {
+    transition: width 3s;
+    transition-timing-function: steps(15, end);
+    background-color: #1d6978;
+    width: 75%;
+}
+
+.git {
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+    background-color: #59115e;
+    width: 80%;
+}
+
+.github {
+    transition: width 3s;
+    transition-timing-function: linear;
+    background-color: #4dd7c9;
+    width: 90%;
+}
+
+.mapbox {
+    transition: width 4s;
+    transition-timing-function: ease-in;
+    background-color: #3f76a3;
+    width: 80%;
+}
+
+.maplibre {
+    transition: width 4s;
+    transition-timing-function: ease-in-out;
+    background-color: #534378;
+    width: 80%;
+}
+
+.turf {
+    transition: width 4s;
+    transition-timing-function: ease;
+    background-color: #3fa378;
+    width: 80%;
+}
+
+
+/* For portrait mobile device */
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+
+    .skills-div {
+        width: 100%;
+    }
+
+}
