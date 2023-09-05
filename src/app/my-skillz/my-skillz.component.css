@@ -1,7 +1,3 @@
-#my-skillz-wrapper {
-    height: 100vh;
-}
-
 .skills {
     text-align: right;
     /* padding-top: 10px; */
@@ -81,6 +77,19 @@
     width: 80%;
 }
 
+.rxjs {
+    transition: width 5s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: #2fa09a;
+    width: 75%;
+}
+
+.nvm {
+    background-color: #79260a;
+    width: 90%;
+    transition: width 3s;
+}
+
 .node {
     background-color: #d76f4d;
     width: 80%;
@@ -148,6 +157,16 @@
 
     .skills-div {
         width: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 577px) {
+
+    #my-skillz-wrapper {
+        height: 100vh;
+        display: none;
     }
 
 }

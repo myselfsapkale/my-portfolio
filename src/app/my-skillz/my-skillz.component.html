@@ -1,4 +1,4 @@
-<div id="my-skillz-wrapper" class="d-flex align-items-center" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
+<div id="my-skillz-wrapper" class="d-flex align-items-center py-5 py-md-0" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
     <div class="w-100">
         <!-- My Info Div -->
         <div class="row align-items-center flex-column flex-md-row justify-content-between">
@@ -67,8 +67,22 @@
                     </div>
                 </div>
 
+                <div class="mt-2">
+                    <span>Rx JS</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'rxjs' : ''">75%</div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-5 skills-div">
+                <div>
+                    <span>NVM</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'nvm' : ''">80%</div>
+                    </div>
+                </div>
+
                 <div>
                     <span>Node JS</span>
                     <div class="skills-wrapper">
