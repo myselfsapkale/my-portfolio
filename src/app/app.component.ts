@@ -14,9 +14,13 @@ export class AppComponent {
 
   constructor(private _commonService: CommonServiceService) {
     window.localStorage.setItem('isDarkMode', 'true'); // By Default The Theme Will Be Dark
-    this.subscription = _commonService.lightDarkModeEmit.subscribe((status) => {
+    this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
     });
+  }
+
+  jumpToSection(target: HTMLElement) {
+    target.scrollIntoView();
   }
 
   ngOnDestroy(): void {

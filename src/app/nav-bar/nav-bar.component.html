@@ -1,21 +1,21 @@
 <nav class="navbar navbar-expand-lg sticky-top" [ngClass]="isDarkMode ? 'dark-mode' : ''">
-  <a class="navbar-brand fw-bolder text-uppercase" routerLink="">Sapkale.</a>
+  <a class="navbar-brand fw-bolder text-uppercase cursor-pointer" (click)="goToPage('home')">Sapkale.</a>
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active-nav">Home</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'home' ? 'active-nav' : ''" (click)="goToPage('home')">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/experience" routerLinkActive="active-nav">Experience</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page"  [ngClass]="activeSection == 'experience' ? 'active-nav' : ''"(click)="goToPage('experience')">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/my-skillz" routerLinkActive="active-nav">My Skillz</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'skillz' ? 'active-nav' : ''" (click)="goToPage('skillz')">My Skillz</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/projects" routerLinkActive="active-nav">Projects</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'projects' ? 'active-nav' : ''" (click)="goToPage('projects')">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold" aria-current="page" routerLink="/contacts" routerLinkActive="active-nav">Contact</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'contact' ? 'active-nav' : ''" (click)="goToPage('contact')">Contact</a>
       </li>
 
       <!-- Github icon is here -->
