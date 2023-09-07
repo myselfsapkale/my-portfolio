@@ -19,38 +19,52 @@ html {
 .dark-mode .btn-custom,
 .dark-mode .btn-custom:active,
 .dark-mode .btn-custom:hover {
-  color: black;
-  background-color: rgb(93, 208, 254);
-  border-color: rgb(93, 208, 254);
+  color: #0a1b2a;
+  background-color: #5dd0fe;
+  border-color: #5dd0fe;
 }
 
 .btn-custom,
 .btn-custom:active,
 .btn-custom:hover {
-  color: aliceblue;
-  background-color: blueviolet;
+  color: #f0f8ff;
+  background-color: #8a2be2;
 }
 
 .dark-mode .btn-inline-custom,
 .dark-mode .btn-inline-custom:active {
-  color: rgb(93, 208, 254);
-  border-color: rgb(93, 208, 254);
+  color: #5dd0fe;
+  border-color: #5dd0fe;
 }
 
 .btn-inline-custom,
 .btn-inline-custom:active {
-  color: blueviolet;
-  border-color: blueviolet;
+  color: #8a2be2;
+  border-color: #8a2be2;
 }
 
 .dark-mode .btn-inline-custom:hover {
-  background-color: rgb(93, 208, 254);
-  color: black;
-  border-color: rgb(93, 208, 254);
+  background-color: #5dd0fe;
+  color: #0a1b2a;
+  border-color: #5dd0fe;
 }
 
 .btn-inline-custom:hover {
-  background-color: blueviolet;
-  color: white;
-  border-color: blueviolet;
+  background-color: #8a2be2;
+  color: #f0f8ff;
+  border-color: #8a2be2;
+}
+
+.dark-mode #skills-section,
+.dark-mode #experience-section,
+.dark-mode #project-section,
+.dark-mode #contact-section {
+  color: #5dd0fe;
+}
+
+#skills-section,
+#experience-section,
+#project-section,
+#contact-section {
+  color: #8a2be2;
 }

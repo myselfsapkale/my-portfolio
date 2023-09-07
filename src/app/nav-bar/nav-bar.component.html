@@ -1,21 +1,21 @@
-<nav class="navbar navbar-expand-lg sticky-top" [ngClass]="isDarkMode ? 'dark-mode' : ''">
+<nav class="navbar navbar-expand-lg sticky-top" [ngClass]="isDarkMode ? 'dark-mode' : ''" [ngStyle]="isDarkMode ? { 'background' : '#0a1b2a' } : { 'background' : '#f0f8ff' }">
   <a class="navbar-brand fw-bolder text-uppercase cursor-pointer" (click)="goToPage('home')">Sapkale.</a>
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'home' ? 'active-nav' : ''" (click)="goToPage('home')">Home</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'home-section' ? 'active-nav' : ''" (click)="goToPage('home-section')">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page"  [ngClass]="activeSection == 'experience' ? 'active-nav' : ''"(click)="goToPage('experience')">Experience</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page"  [ngClass]="activeSection == 'experience-section' ? 'active-nav' : ''"(click)="goToPage('experience-section')">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'skillz' ? 'active-nav' : ''" (click)="goToPage('skillz')">My Skillz</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'skills-section' ? 'active-nav' : ''" (click)="goToPage('skills-section')">My Skillz</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'projects' ? 'active-nav' : ''" (click)="goToPage('projects')">Projects</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'project-section' ? 'active-nav' : ''" (click)="goToPage('project-section')">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'contact' ? 'active-nav' : ''" (click)="goToPage('contact')">Contact</a>
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'contact-section' ? 'active-nav' : ''" (click)="goToPage('contact-section')">Contact</a>
       </li>
 
       <!-- Github icon is here -->

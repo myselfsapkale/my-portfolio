@@ -8,11 +8,11 @@
 
 /* Here we have all the global styles related dark mode */
 .dark-mode .fa {
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .dark-mode a {
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .dark-mode a:hover {

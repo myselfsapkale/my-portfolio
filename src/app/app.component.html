@@ -1,8 +1,15 @@
 <main [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
   <div class="container">
     <!-- Common navbar is here -->
-    <app-nav-bar [home]="home" [experience]="experience" [skillz]="skillz" [projects]="projects" [contact]="contact"
-      (jumpToSection)="jumpToSection($event)" />
+    <app-nav-bar 
+      [home]="home" 
+      [experience]="experience" 
+      [skillz]="skillz" 
+      [projects]="projects" 
+      [contact]="contact"
+      [activeSection]="activeSection"
+      (jumpToSection)="jumpToSection($event)" 
+      />
 
     <!-- Home Section -->
     <div #home>

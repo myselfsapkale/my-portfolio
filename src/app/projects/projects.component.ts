@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { CommonServiceService } from '../services/common-service.service';
 
@@ -7,10 +7,9 @@ import { CommonServiceService } from '../services/common-service.service';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnDestroy {
   isDarkMode: boolean = true;
   subscription: Subscription;
-
 
   constructor(private _commonService: CommonServiceService) {
     this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
@@ -20,6 +19,13 @@ export class ProjectsComponent {
       this.isDarkMode = true;
     } else {
       this.isDarkMode = false;
+    }
+  }
+
+
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
     }
   }
 

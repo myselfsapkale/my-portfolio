@@ -12,7 +12,7 @@ export class ExperienceComponent implements OnDestroy {
   subscription: Subscription;
 
   constructor(private _commonService: CommonServiceService) {
-    this.subscription = _commonService.lightDarkModeEmit.subscribe((status) => {
+    this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
     });
     if (window.localStorage.getItem('isDarkMode') == 'true') {

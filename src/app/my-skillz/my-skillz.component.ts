@@ -13,7 +13,7 @@ export class MySkillzComponent implements AfterViewInit, OnDestroy {
   showEffect: boolean = false;
 
   constructor(private _commonService: CommonServiceService, private cd: ChangeDetectorRef) {
-    this.subscription = _commonService.lightDarkModeEmit.subscribe((status) => {
+    this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
     });
     if (window.localStorage.getItem('isDarkMode') == 'true') {

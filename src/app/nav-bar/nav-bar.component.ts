@@ -8,14 +8,14 @@ import { CommonServiceService } from '../services/common-service.service';
 })
 export class NavBarComponent {
   isDarkMode: boolean = true;
-  activeSection: string = '';
   @Output() jumpToSection: EventEmitter<HTMLElement> = new EventEmitter<HTMLElement>();
   @Input() home!: HTMLElement;
   @Input() experience!: HTMLElement;
   @Input() skillz!: HTMLElement;
   @Input() projects!: HTMLElement;
   @Input() contact!: HTMLElement;
-
+  @Input() activeSection: string = '';
+  
   constructor(private _commonService: CommonServiceService) {}
 
   changeMode() {
@@ -24,22 +24,22 @@ export class NavBarComponent {
     window.localStorage.setItem('isDarkMode', this.isDarkMode ? 'true' : 'false');
   }
 
-  goToPage(section: string) {
+  goToPage(section: string) { // To jump on any section
     this.activeSection = section;
     switch(section) {
-      case 'home':
+      case 'home-section':
         this.jumpToSection.emit(this.home);
         break; 
-      case 'experience':
+      case 'experience-section':
         this.jumpToSection.emit(this.experience);
         break; 
-      case 'skillz':
+      case 'skills-section':
         this.jumpToSection.emit(this.skillz);
         break; 
-      case 'projects':
+      case 'project-section':
         this.jumpToSection.emit(this.projects);
         break; 
-      case 'contact':
+      case 'contact-section':
         this.jumpToSection.emit(this.contact);
         break; 
       default:
