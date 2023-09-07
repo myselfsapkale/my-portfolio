@@ -63,10 +63,14 @@
         width: 7rem;
     }
 
+    .desc-box {
+        text-align: center;
+    }
+
 }
 
 /* For portrait tablets */
-@media only screen and (min-width: 577px) and (max-width: 811px) and (orientation: portrait) {
+@media only screen and (min-width: 577px) and (max-width: 991px) and (orientation: portrait) {
 
     #my-pic {
         width: 500px;
@@ -83,6 +87,10 @@
     .btn-g {
         justify-content: center;
     }
+
+    .desc-box {
+        text-align: center;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -95,9 +103,8 @@
 
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1284px) {
+@media only screen and (min-width: 992px) {
 
     #my-pic {
         height: 40rem;
