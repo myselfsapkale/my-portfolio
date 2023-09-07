@@ -1,38 +1,36 @@
 <main [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
   <div class="container">
     <!-- Common navbar is here -->
-    <app-nav-bar
-      [home]="home"
-      [experience]="experience"
-      [skillz]="skillz"
-      [projects]="projects"
-      [contact]="contact"
-      (jumpToSection)="jumpToSection($event)"
-    />
+    <app-nav-bar [home]="home" [experience]="experience" [skillz]="skillz" [projects]="projects" [contact]="contact"
+      (jumpToSection)="jumpToSection($event)" />
 
     <!-- Home Section -->
     <div #home>
       <app-home />
     </div>
-
+    <hr>
     <!-- Experience Section -->
     <div #experience>
       <app-experience />
     </div>
 
+    <hr>
     <!-- Skillz Section -->
     <div #skillz>
       <app-my-skillz />
     </div>
 
+    <hr>
     <!-- Projects Section -->
     <div #projects>
       <app-projects />
     </div>
 
+    <hr>
     <!-- Contact Section -->
     <div #contact>
       <app-contacts />
     </div>
   </div>
+  <hr>
 </main>
