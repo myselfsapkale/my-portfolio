@@ -1,4 +1,10 @@
-import { AfterViewInit, ChangeDetectorRef, Component, HostListener, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  HostListener,
+  ViewChild,
+} from '@angular/core';
 import { CommonServiceService } from './services/common-service.service';
 import { Subscription } from 'rxjs';
 import { MySkillzComponent } from './my-skillz/my-skillz.component';
@@ -21,7 +27,10 @@ export class AppComponent implements AfterViewInit {
     this.getActiveSection();
   }
 
-  constructor(private _commonService: CommonServiceService, private cd: ChangeDetectorRef) {
+  constructor(
+    private _commonService: CommonServiceService,
+    private cd: ChangeDetectorRef
+  ) {
     window.localStorage.setItem('isDarkMode', 'true'); // By Default The Theme Will Be Dark
     this.subscription = this._commonService.lightDarkModeEmit.subscribe(
       (status) => {
@@ -33,11 +42,6 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.getActiveSection();
     this.cd.detectChanges();
-  }
-
-  jumpToSection(target: HTMLElement) {
-    // For jumping to any section
-    target.scrollIntoView();
   }
 
   getActiveSection() {
