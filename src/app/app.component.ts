@@ -14,8 +14,9 @@ import { MySkillzComponent } from './my-skillz/my-skillz.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent implements AfterViewInit {
-  title = 'my-portfolio';
+  title = 'Pushpendra Sapkale';
   isDarkMode: boolean = true;
   subscription: Subscription;
   activeSection: string = '';
