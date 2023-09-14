@@ -8,9 +8,23 @@
     <div class="d-flex align-items-center justify-content-center">
         <!-- My Info Div -->
         <div class="row align-items-center flex-column flex-md-row justify-content-between w-100">
-            <div class="col-md-5 skills-div">
+            <div class="col skills-div">
 
                 <div>
+                    <span>C++</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'c' : ''">90%</div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <span>DSA</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'dsa' : ''">90%</div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
                     <span>HTML</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'html' : ''">90%</div>
@@ -74,14 +88,21 @@
                 </div>
 
                 <div class="mt-2">
-                    <span>Rx JS</span>
+                    <span>RxJS</span>
                     <div class="skills-wrapper">
-                        <div class="skills" [ngClass]="showEffect ? 'rxjs' : ''">75%</div>
+                        <div class="skills" [ngClass]="showEffect ? 'rxjs' : ''">85%</div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <span>NGRX</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'ngrx' : ''">80%</div>
                     </div>
                 </div>
 
             </div>
-            <div class="col-md-5 skills-div">
+            <div class="col skills-div">
                 <div>
                     <span>NVM</span>
                     <div class="skills-wrapper">
@@ -89,7 +110,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="mt-2">
                     <span>Node JS</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'node' : ''">80%</div>

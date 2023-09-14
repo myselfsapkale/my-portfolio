@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { CommonServiceService } from '../services/common-service.service';
 
@@ -7,10 +7,10 @@ import { CommonServiceService } from '../services/common-service.service';
   templateUrl: './my-skillz.component.html',
   styleUrls: ['./my-skillz.component.css'],
 })
-export class MySkillzComponent implements OnDestroy {
+export class MySkillzComponent implements AfterViewInit, OnDestroy {
   isDarkMode: boolean = true;
   subscription: Subscription;
-  showEffect: boolean = false;  // We are changing status from parent component here
+  showEffect: boolean = false;
 
   constructor(private _commonService: CommonServiceService, private cd: ChangeDetectorRef) {
     this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
@@ -21,6 +21,13 @@ export class MySkillzComponent implements OnDestroy {
     } else {
       this.isDarkMode = false;
     }
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.showEffect = true;
+    }, 0);
+    this.cd.detectChanges();
   }
 
   ngOnDestroy(): void {
