@@ -5,10 +5,10 @@
         </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center">
+    <div>
         <!-- My Info Div -->
         <div class="row align-items-center flex-column flex-md-row justify-content-between w-100">
-            <div class="col skills-div">
+            <div class="col-md-4 skills-div">
 
                 <div>
                     <span>C++</span>
@@ -21,27 +21,6 @@
                     <span>DSA</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'dsa' : ''">90%</div>
-                    </div>
-                </div>
-
-                <div class="mt-2">
-                    <span>HTML</span>
-                    <div class="skills-wrapper">
-                        <div class="skills" [ngClass]="showEffect ? 'html' : ''">90%</div>
-                    </div>
-                </div>
-
-                <div class="mt-2">
-                    <span>CSS</span>
-                    <div class="skills-wrapper">
-                        <div class="skills" [ngClass]="showEffect ? 'css' : ''">85%</div>
-                    </div>
-                </div>
-
-                <div class="mt-2">
-                    <span>Bootstrap</span>
-                    <div class="skills-wrapper">
-                        <div class="skills" [ngClass]="showEffect ? 'bootstrap' : ''">90%</div>
                     </div>
                 </div>
 
@@ -66,7 +45,10 @@
                     </div>
                 </div>
 
-                <div class="mt-2">
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0 skills-div">
+
+                <div class="mt-2 mt-md-0">
                     <span>Angular</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'angular' : ''">85%</div>
@@ -102,8 +84,9 @@
                 </div>
 
             </div>
-            <div class="col skills-div">
-                <div>
+            <div class="col-md-4 mt-5 mt-md-0 skills-div">
+
+                <div class="mt-2 mt-md-0">
                     <span>NVM</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'nvm' : ''">80%</div>
@@ -138,7 +121,13 @@
                     </div>
                 </div>
 
-                <div class="mt-2">
+            </div>
+        </div>
+
+        <div class="row align-items-center flex-column flex-md-row mt-md-5 pt-5 justify-content-between w-100">
+
+            <div class="col skills-div">
+                <div class="mt-2 mt-md-0">
                     <span>Git</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'git' : ''">80%</div>
@@ -151,8 +140,36 @@
                         <div class="skills" [ngClass]="showEffect ? 'github' : ''">90%</div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col mt-5 mt-md-0 skills-div">
+
+                <div class="mt-2 mt-md-0">
+                    <span>HTML</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'html' : ''">90%</div>
+                    </div>
+                </div>
 
                 <div class="mt-2">
+                    <span>CSS</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'css' : ''">85%</div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <span>Bootstrap</span>
+                    <div class="skills-wrapper">
+                        <div class="skills" [ngClass]="showEffect ? 'bootstrap' : ''">90%</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col mt-5 mt-md-0 skills-div">
+
+                <div class="mt-2 mt-md-0">
                     <span>Mapbox</span>
                     <div class="skills-wrapper">
                         <div class="skills" [ngClass]="showEffect ? 'mapbox' : ''">80%</div>
@@ -173,6 +190,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
