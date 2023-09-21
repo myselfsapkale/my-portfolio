@@ -1,0 +1,20 @@
+.link {
+    color: #8a2be2;
+}
+
+.dark-mode .link {
+    color: #5dd0fe;
+}
+
+/* For portrait mobile device */
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+
+    .my-contacts {
+        text-align: center;
+    }
+
+    .info-icons {
+        justify-content: center;
+    }
+
+}
