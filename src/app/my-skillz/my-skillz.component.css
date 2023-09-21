@@ -14,11 +14,11 @@
     border-radius: 0 20px 20px 0;
 }
 
-.c {
+.java{
     transition: 2s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     background-color: #1626d5;
-    width: 90%;
+    width: 80%;
 }
 
 .dsa {
