@@ -18,6 +18,84 @@ a:hover {
     color: #5dd0fe;
 }
 
+/* This is for mobile/tablet nav bar */
+.dark-canvas a:hover {
+    color: #5dd0fe;
+}
+
+/* This is for mobile/tablet nav bar */
+.dark-canvas .active-nav {
+    color: #5dd0fe;
+}
+
+
 .active-nav {
     color: #8a2be2;
+}
+
+.dark-mode .navbar-toggler {
+    color: #f0f8ff;
+    border: none;
+}
+
+.navbar-toggler {
+    color: #0a1b2a;
+    border: none;
+}
+
+.dark-mode .navbar-toggler:hover {
+    color: #5dd0fe;
+}
+
+.navbar-toggler:hover {
+    color: #8a2be2;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dark-canvas .close-icon {
+    color: #f0f8ff;
+}
+
+.light-canvas .close-icon {
+    color: #0a1b2a;
+}
+
+.dark-canvas .close-icon:hover {
+    color: #5dd0fe;
+}
+
+.light-canvas .close-icon:hover {
+    color: #8a2be2;
+}
+
+.dark-canvas{
+    background-color: #0a1b2a;
+    color: #f0f8ff;
+}
+
+.light-canvas {
+    background-color: #f0f8ff;
+    color: #0a1b2a;
+}
+
+.offcanvas-body .nav-link .fa {
+    font-size: 20px;
+}
+
+.offcanvas {
+    width: 30%;
+}
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+
+    .offcanvas {
+        width: 50%;
+    }
+
 }
