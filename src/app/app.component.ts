@@ -51,7 +51,7 @@ export class AppComponent implements AfterViewInit {
     // Here we are getting current active tab
     let allTabs = [
       'home-section',
-      'experience-section',
+      'qualifications-section',
       'skills-section',
       'project-section',
       'contact-section',

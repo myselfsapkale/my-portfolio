@@ -28,7 +28,7 @@ export class NavBarComponent {
       case 'home-section':
         document.getElementById('home')!.scrollIntoView();
         break;
-      case 'experience-section':
+      case 'qualifications-section':
         document.getElementById('experience')!.scrollIntoView();
         break;
       case 'skills-section':

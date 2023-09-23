@@ -3,11 +3,11 @@ import { Subscription } from 'rxjs';
 import { CommonServiceService } from '../services/common-service.service';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css'],
+  selector: 'app-timeline',
+  templateUrl: './timeline.component.html',
+  styleUrls: ['./timeline.component.css'],
 })
-export class ExperienceComponent implements OnDestroy {
+export class TimelineComponent implements OnDestroy {
   isDarkMode: boolean = true;
   subscription: Subscription;
 
