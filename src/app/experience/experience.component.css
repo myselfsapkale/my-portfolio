@@ -1,3 +1,7 @@
-.main-experience  {
-    height: 100vh;
+@media only screen and (min-width: 992px) {
+
+    .main-experience {
+        height: 100vh;
+    }
+
 }

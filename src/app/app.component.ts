@@ -8,6 +8,7 @@ import {
 import { CommonServiceService } from './services/common-service.service';
 import { Subscription } from 'rxjs';
 import { MySkillzComponent } from './my-skillz/my-skillz.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ export class AppComponent implements AfterViewInit {
   activeSection: string = '';
 
   @ViewChild(MySkillzComponent) mySkillzComponent!: MySkillzComponent;
+  @ViewChild(NavBarComponent) navBarComponent!: NavBarComponent;
 
   @HostListener('document:scroll', ['$event'])
   onScroll() {
@@ -82,6 +84,10 @@ export class AppComponent implements AfterViewInit {
     var elemBottom = rect.bottom;
     var isVisible = elemTop >= 0 && elemBottom <= window.innerHeight; // Only completely visible elements return true:
     return isVisible;
+  }
+
+  jumpToPage(page: string) {
+    this.navBarComponent.goToPage(page);
   }
 
   ngOnDestroy(): void {

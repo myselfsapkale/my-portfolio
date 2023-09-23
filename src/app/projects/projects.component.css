@@ -13,13 +13,13 @@
 .dark-mode .active-indicator {
     color: #5dd0fe;
     font-size: 10px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .active-indicator {
     color: #8a2be2;
     font-size: 10px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .dark-mode .inactive-indicator {
@@ -48,10 +48,10 @@
     cursor: pointer;
 }
 
-.card-body {
-    /* max-height: 300px; */
+/* .card-body {
+    max-height: 300px;
     overflow: scroll;
-}
+} */
 
 .dark-mode .project-links {
     color: #5dd0fe;
