@@ -2,6 +2,14 @@
     width: 25px;
 }
 
+.dark-mode .navbar-brand {
+    color: #5dd0fe !important;
+}
+
+.navbar-brand {
+    color: #8a2be2;
+}
+
 .dark-mode a {
     color: #f0f8ff;
 }

@@ -11,6 +11,21 @@ export class ProjectsComponent implements OnDestroy {
   isDarkMode: boolean = true;
   subscription: Subscription;
 
+  carouselInfo: any = {
+    igismap: {
+      active: 0,
+      moreInfo: false
+    },
+    xcellen: {
+      active: 0,
+      moreInfo: false
+    },
+    geojsoncreator: {
+      active: 0,
+      moreInfo: false
+    },
+  }
+
   constructor(private _commonService: CommonServiceService) {
     this.subscription = this._commonService.lightDarkModeEmit.subscribe((status) => {
       this.isDarkMode = status;
@@ -20,6 +35,11 @@ export class ProjectsComponent implements OnDestroy {
     } else {
       this.isDarkMode = false;
     }
+  }
+
+
+  changeCarouselImage(carouselName: string, index: number) {
+    this.carouselInfo[carouselName]['active'] = index;
   }
 
 

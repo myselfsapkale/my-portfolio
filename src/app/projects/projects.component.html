@@ -1,10 +1,334 @@
 <div class="main-project my-5 py-5" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
     <div class="row mb-5" id="project-section">
         <div class="col">
-            <p class="fs-1 text-center">Project</p>
+            <p class="fs-1 text-center fw-bold">Project</p>
         </div>
     </div>
     <div class="row">
 
+        <!-- Igis MAP Card -->
+        <div class="col-md-6">
+            <div class="card">
+                <div id="igismapCard" class="carousel slide p-3">
+                    <div class="carousel-inner border shadow rounded p-1">
+                        <div class="carousel-item active">
+                            <img src="../../assets/img/igis1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/igis8.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="my-3 indicators d-flex justify-content-center gap-3">
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="0"
+                        (click)="changeCarouselImage('igismap', 0)" class="active" aria-current="true"
+                        aria-label="Slide 1">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 0 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="1"
+                        (click)="changeCarouselImage('igismap', 1)" aria-label="Slide 2">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 1 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="2"
+                        (click)="changeCarouselImage('igismap', 2)" aria-label="Slide 3">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 2 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="3"
+                        (click)="changeCarouselImage('igismap', 3)" aria-label="Slide 4">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 3 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="4"
+                        (click)="changeCarouselImage('igismap', 4)" aria-label="Slide 5">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 4 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="5"
+                        (click)="changeCarouselImage('igismap', 5)" aria-label="Slide 6">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 5 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="6"
+                        (click)="changeCarouselImage('igismap', 6)" aria-label="Slide 7">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 6 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#igismapCard" data-bs-slide-to="7"
+                        (click)="changeCarouselImage('igismap', 7)" aria-label="Slide 8">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.igismap.active == 7 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">IGISMAP</h5>
+                    <div *ngIf="carouselInfo.igismap.moreInfo">
+                        <p class="card-text">
+                            This is an online GIS data manipulation tool, where User can do GIS mapping on a web
+                            application, We have multiple products ( as Modules ) which make gis mapping very easy
+                        </p>
+
+                        <span class="badge text-bg-primary py-2">Angular</span>
+                        <span class="badge text-bg-success ms-2 py-2">Angular Material</span>
+                        <span class="badge text-bg-secondary ms-2 py-2">Type Script</span>
+                        <span class="badge text-bg-danger ms-2 py-2">Mapbox</span>
+                        <span class="badge text-bg-warning ms-2 py-2">Turf.js</span>
+                        <span class="badge text-bg-info ms-2 py-2">Html</span>
+                        <span class="badge text-bg-dark ms-2 py-2">CSS</span>
+                        <!-- <span class="badge text-bg-dark ms-2 py-2"></span> -->
+
+                        <p class="mt-3 fw-bold">My Role :</p>
+
+                        <ul>
+                            <li>API integration with Angular</li>
+                            <li>Managed geojson data state in each component in a module called Map Maker</li>
+                            <li>Design UI on Angular also solved design issues of data table in GIS data module</li>
+                            <li>Research on Turf.js library and developed a intersect polygon mode</li>
+                            <li>Developed a mouse hover effect on Mapbox Map to show custom messages</li>
+                        </ul>
+                        <a class="d-flex align-items-center mb-3 text-decoration-none project-links"
+                            href="https://map.igismap.com/" target="_blank">
+                            <i class="fa fa-chrome" aria-hidden="true"></i>
+                            <span class="ms-2">https://map.igismap.com/</span>
+                        </a>
+                    </div>
+                    <a class="show-hide-more"
+                        (click)="carouselInfo.igismap.moreInfo = !carouselInfo.igismap.moreInfo">{{
+                        !carouselInfo.igismap.moreInfo ? 'More' : 'Hide' }}</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Xcellen Card -->
+        <div class="col-md-6 mt-md-0 mt-5">
+            <div class="card">
+                <div id="xcellenCard" class="carousel slide p-3">
+                    <div class="carousel-inner border shadow rounded p-1">
+                        <div class="carousel-item active">
+                            <img src="../../assets/img/xcellen1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/xcellen7.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="my-3 indicators d-flex justify-content-center gap-3">
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="0"
+                        (click)="changeCarouselImage('xcellen', 0)" class="active" aria-current="true"
+                        aria-label="Slide 1">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 0 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="1"
+                        (click)="changeCarouselImage('xcellen', 1)" aria-label="Slide 2">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 1 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="2"
+                        (click)="changeCarouselImage('xcellen', 2)" aria-label="Slide 3">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 2 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="3"
+                        (click)="changeCarouselImage('xcellen', 3)" aria-label="Slide 4">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 3 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="4"
+                        (click)="changeCarouselImage('xcellen', 4)" aria-label="Slide 5">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 4 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="5"
+                        (click)="changeCarouselImage('xcellen', 5)" aria-label="Slide 6">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 5 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#xcellenCard" data-bs-slide-to="6"
+                        (click)="changeCarouselImage('xcellen', 6)" aria-label="Slide 7">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.xcellen.active == 6 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">XCELLEN</h5>
+                    <div *ngIf="carouselInfo.xcellen.moreInfo">
+                        <p class="card-text">
+                            Xcellen Survey Tool is an angular based web application where pharma companies can conduct
+                            surveys for their products get report, add validations, set new resources and can do alot of
+                            things for increasing productivity.
+                        </p>
+
+                        <span class="badge text-bg-primary py-2">Angular</span>
+                        <span class="badge text-bg-success ms-2 py-2">Angular Material</span>
+                        <span class="badge text-bg-danger ms-2 py-2">Ag Grid</span>
+                        <span class="badge text-bg-secondary ms-2 py-2">Type Script</span>
+                        <span class="badge text-bg-warning ms-2 py-2">Node JS</span>
+                        <span class="badge text-bg-info ms-2 py-2">Express JS</span>
+                        <span class="badge text-bg-dark ms-2 py-2">MySQL</span>
+                        <span class="badge text-bg-light ms-2 py-2">Bootstrap</span>
+
+                        <p class="mt-3 fw-bold">My Role :</p>
+
+                        <ul>
+                            <li>System design of new module named Sales Advisory from scratch</li>
+                            <li>Created a standalone data analytics component using Ag-Grid</li>
+                            <li>Developed a drag and drop feature using angular cdk drag-drop</li>
+                            <li>Got token of salesforce user using google OAuth 2.0</li>
+                            <li>Developed API authentication system, restricts users to use eatch other's APIs</li>
+                            <li>Created APIs according to need of the project</li>
+                            <li>Migrated whole backend system from NodeJS v8 to v18 in Express JS</li>
+                        </ul>
+                        <a class="d-flex align-items-center text-decoration-none project-links mb-3"
+                            href="https://www.xcellen.com/" target="_blank">
+                            <i class="fa fa-chrome" aria-hidden="true"></i>
+                            <span class="ms-2">https://www.xcellen.com/</span>
+                        </a>
+                    </div>
+                    <a class="show-hide-more"
+                        (click)="carouselInfo.xcellen.moreInfo = !carouselInfo.xcellen.moreInfo">{{
+                        !carouselInfo.xcellen.moreInfo ? 'More' : 'Hide' }}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row d-flex justify-content-center mt-5">
+        <!-- Geojson Creator Card -->
+        <div class="col-md-6">
+            <div class="card">
+    
+                <div id="geojsoncreatorCard" class="carousel slide p-3">
+                    <div class="carousel-inner border shadow rounded p-1">
+                        <div class="carousel-item active">
+                            <img src="../../assets/img/geojsoncreator1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/geojsoncreator2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/geojsoncreator3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/geojsoncreator4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../assets/img/geojsoncreator5.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="my-3 indicators d-flex justify-content-center gap-3">
+                    <button type="button" data-bs-target="#geojsoncreatorCard" data-bs-slide-to="0"
+                        (click)="changeCarouselImage('geojsoncreator', 0)" class="active" aria-current="true"
+                        aria-label="Slide 1">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.geojsoncreator.active == 0 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#geojsoncreatorCard" data-bs-slide-to="1"
+                        (click)="changeCarouselImage('geojsoncreator', 1)" aria-label="Slide 2">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.geojsoncreator.active == 1 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#geojsoncreatorCard" data-bs-slide-to="2"
+                        (click)="changeCarouselImage('geojsoncreator', 2)" aria-label="Slide 3">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.geojsoncreator.active == 2 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#geojsoncreatorCard" data-bs-slide-to="3"
+                        (click)="changeCarouselImage('geojsoncreator', 3)" aria-label="Slide 4">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.geojsoncreator.active == 3 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#geojsoncreatorCard" data-bs-slide-to="4"
+                        (click)="changeCarouselImage('geojsoncreator', 4)" aria-label="Slide 5">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.geojsoncreator.active == 4 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">GEOJSON CREATOR</h5>
+                    <div *ngIf="carouselInfo.geojsoncreator.moreInfo">
+                        <p class="card-text">
+                            Geojson-cretor-tool is an online GeoJSON creator tool based on Maplibre and created with
+                            Angular, It's a single page web application where user can create, edit, upload or download
+                            geojson data online
+                        </p>
+
+                        <span class="badge text-bg-primary py-2">Angular</span>
+                        <span class="badge text-bg-success ms-2 py-2">Bootstrap</span>
+                        <span class="badge text-bg-secondary ms-2 py-2">Type Script</span>
+                        <span class="badge text-bg-danger ms-2 py-2">Angular Material</span>
+                        <span class="badge text-bg-dark ms-2 py-2">Maplibre</span>
+                        <span class="badge text-bg-warning ms-2 py-2">Turf.js</span>
+                        <span class="badge text-bg-info ms-2 py-2">Html</span>
+                        <span class="badge text-bg-dark ms-2 py-2">CSS</span>
+
+                        <p class="mt-3 fw-bold">My Role :</p>
+
+                        <ul>
+                            <li>This is my own project, i have created it from the scratch</li>
+                            <li>This is free tool also it's code is available on github</li>
+                            <li>I have done SEO here this web app can be found on google and bing search both</li>
+                            <li>Here we have variety of Mapbox Draw modes</li>
+                        </ul>
+                        <a class="d-flex align-items-center text-decoration-none project-links"
+                            href="https://geojsoncreator.com/" target="_blank">
+                            <i class="fa fa-chrome" aria-hidden="true"></i>
+                            <span class="ms-2">https://geojsoncreator.com/</span>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none mt-2 mb-3 project-links"
+                            href="https://github.com/pushpendra-sapkale-dev/geojson-creator-tool" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span class="ms-2">Github Preview</span>
+                        </a>
+                    </div>
+                    <a class="show-hide-more"
+                        (click)="carouselInfo.geojsoncreator.moreInfo = !carouselInfo.geojsoncreator.moreInfo">{{
+                        !carouselInfo.geojsoncreator.moreInfo ? 'More' : 'Hide' }}</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

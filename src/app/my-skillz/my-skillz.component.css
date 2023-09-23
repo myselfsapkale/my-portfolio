@@ -14,7 +14,7 @@
     border-radius: 0 20px 20px 0;
 }
 
-.java{
+.java {
     transition: 2s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     background-color: #1626d5;
@@ -179,5 +179,16 @@
         width: 100%;
     }
 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .main-skillz {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 }
