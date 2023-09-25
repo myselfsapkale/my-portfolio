@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { CommonServiceService } from '../services/common-service.service';
 
@@ -7,7 +7,7 @@ import { CommonServiceService } from '../services/common-service.service';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })
-export class ProjectsComponent implements OnDestroy {
+export class ProjectsComponent implements OnDestroy, AfterViewInit {
   isDarkMode: boolean = true;
   subscription: Subscription;
 
@@ -35,6 +35,25 @@ export class ProjectsComponent implements OnDestroy {
     } else {
       this.isDarkMode = false;
     }
+  }
+
+
+  ngAfterViewInit(): void {
+    const igismapCarousel = document.getElementById('igismapCard');
+    const xcellenCarousel = document.getElementById('xcellenCard');
+    const geojsoncreatorCarousel = document.getElementById('geojsoncreatorCard');
+
+    igismapCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
+      this.carouselInfo.igismap.active = event.to;
+    });
+    
+    xcellenCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
+      this.carouselInfo.xcellen.active = event.to;
+    });
+    
+    geojsoncreatorCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
+      this.carouselInfo.geojsoncreator.active = event.to;
+    });
   }
 
 
