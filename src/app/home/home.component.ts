@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnDestroy {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
   @Output() goToPageEmit: EventEmitter<string> = new EventEmitter<string>();
 

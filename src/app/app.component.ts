@@ -18,7 +18,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 export class AppComponent implements AfterViewInit {
   title = 'Pushpendra Sapkale';
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
   activeSection: string = '';
 
@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit {
     private _commonService: CommonServiceService,
     private cd: ChangeDetectorRef
   ) {
-    window.localStorage.setItem('isDarkMode', 'true'); // By Default The Theme Will Be Dark
+    window.localStorage.setItem('isDarkMode', 'false'); // By Default The Theme Will Be Dark
     this.subscription = this._commonService.lightDarkModeEmit.subscribe(
       (status) => {
         this.isDarkMode = status;

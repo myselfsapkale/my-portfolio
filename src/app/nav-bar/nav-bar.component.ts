@@ -7,7 +7,7 @@ import { CommonServiceService } from '../services/common-service.service';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   @Input() activeSection: string = '';
 
   constructor(private _commonService: CommonServiceService) {}

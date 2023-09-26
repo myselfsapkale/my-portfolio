@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./contacts.component.css'],
 })
 export class ContactsComponent implements OnDestroy {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
 
   constructor(private _commonService: CommonServiceService) {

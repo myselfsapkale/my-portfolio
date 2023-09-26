@@ -8,7 +8,7 @@ import { CommonServiceService } from '../services/common-service.service';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnDestroy, AfterViewInit {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
 
   carouselInfo: any = {

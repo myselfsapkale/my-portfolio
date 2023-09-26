@@ -8,7 +8,7 @@ import { CommonServiceService } from '../services/common-service.service';
   styleUrls: ['./my-skillz.component.css'],
 })
 export class MySkillzComponent implements AfterViewInit, OnDestroy {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
   showEffect: boolean = false;
 

@@ -8,7 +8,7 @@ import { CommonServiceService } from '../services/common-service.service';
   styleUrls: ['./timeline.component.css'],
 })
 export class TimelineComponent implements OnDestroy {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   subscription: Subscription;
 
   constructor(private _commonService: CommonServiceService) {
