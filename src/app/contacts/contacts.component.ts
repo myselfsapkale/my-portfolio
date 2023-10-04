@@ -48,6 +48,7 @@ export class ContactsComponent implements OnDestroy {
         this.showNotification = false;
       }, 1000);
       this.showSpinner = false;
+      form.reset();
     }
     else {
       this.showSpinner = false;
