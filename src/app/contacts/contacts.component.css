@@ -6,6 +6,24 @@
     color: #5dd0fe;
 }
 
+.notification {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    color: #0a1b2a;
+    background-color: #32e060;
+    padding: 10px;
+    border-radius: 50px 0 0 50px;
+}
+
+.show-notification {
+    display: block;
+}
+
+.hide-notification {
+    display: none;
+}
+
 /* For portrait mobile device */
 @media only screen and (max-width: 576px) and (orientation: portrait) {
 
