@@ -42,8 +42,8 @@
                         <i class="fa fa-github" aria-hidden="true"></i> <span class="ms-3">Github</span>
                     </div>
                     <div class="mt-1">
-                        <a target="_blank" href="https://github.com/pushpendra-sapkale-dev"
-                            class="text-decoration-none link">/pushpendra-sapkale-dev</a>
+                        <a target="_blank" href="https://github.com/pksapkale"
+                            class="text-decoration-none link">/pksapkale</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                     <div *ngIf="showSpinner" class="spinner-border spinner-dark spinner-border-sm" role="status">
                         <span class="visually-hidden">Loading...</span>
                     </div>
-                    <span class="ms-2">
+                    <span [ngClass]="showSpinner ? 'ms-2' : ''">
                         Submit
                     </span>
                 </button>
