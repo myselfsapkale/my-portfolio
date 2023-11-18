@@ -2,11 +2,11 @@
     z-index: 10;
     height: 50px;
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    right: 0;
+    bottom: 0;
     background-color: #8a2be2;
     color: #f0f8ff;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;

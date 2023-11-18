@@ -17,6 +17,9 @@
       <li class="nav-item">
         <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" [ngClass]="activeSection == 'contact-section' ? 'active-nav' : ''" (click)="goToPage('contact-section')">Contact</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link me-4 fw-bold cursor-pointer" aria-current="page" routerLink="resume">Resume</a>
+      </li>
 
       <!-- Github icon is here -->
       <li class="nav-item">
@@ -97,6 +100,14 @@
           <i class="fa fa-address-card-o" aria-hidden="true"></i>
           <span class="ms-2">
             Contact
+          </span>
+        </a>
+      </li>
+      <li class="nav-item mt-2">
+        <a data-bs-dismiss="offcanvas" class="nav-link fw-bold cursor-pointer" aria-current="page" routerLink="resume">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          <span class="ms-2">
+            Resume
           </span>
         </a>
       </li>
