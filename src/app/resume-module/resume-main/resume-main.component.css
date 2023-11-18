@@ -10,16 +10,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer !important;
-    transition: all 0.5s ;
+    cursor: pointer;
 }
 
-.dark-mode .home-button-div{
+.dark-mode .home-button-div {
     background-color: #5dd0fe;
     color: #0a1b2a;
 }
 
 iframe {
-    height: 100vh;
+    height: 99vh;
     width: 100%;
 }
