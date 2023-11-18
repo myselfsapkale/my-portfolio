@@ -1,6 +1,6 @@
 import { Component, OnDestroy, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { CommonServiceService } from '../services/common-service.service';
+import { CommonServiceService } from '../../services/common-service.service';
 
 @Component({
   selector: 'app-projects',

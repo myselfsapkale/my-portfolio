@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { CommonServiceService } from '../services/common-service.service';
+import { CommonServiceService } from '../../services/common-service.service';
 
 @Component({
   selector: 'app-my-skillz',
