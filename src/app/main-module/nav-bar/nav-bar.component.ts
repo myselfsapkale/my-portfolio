@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CommonServiceService } from '../services/common-service.service';
+import { CommonServiceService } from '../../services/common-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +10,9 @@ export class NavBarComponent {
   isDarkMode: boolean = false;
   @Input() activeSection: string = '';
 
-  constructor(private _commonService: CommonServiceService) {}
+  constructor(private _commonService: CommonServiceService) {
+    this.isDarkMode = window.localStorage.getItem('isDarkMode') == 'true' ? true : false;
+  }
 
   changeMode() {
     this.isDarkMode = !this.isDarkMode;
@@ -45,4 +47,5 @@ export class NavBarComponent {
         break;
     }
   }
+
 }

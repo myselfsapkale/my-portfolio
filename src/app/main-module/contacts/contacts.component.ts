@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { CommonServiceService } from '../services/common-service.service';
+import { CommonServiceService } from '../../services/common-service.service';
 import { Subscription } from 'rxjs';
 import emailjs from '@emailjs/browser';
 

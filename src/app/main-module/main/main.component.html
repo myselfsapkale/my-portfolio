@@ -1,0 +1,36 @@
+<main [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
+    <div class="container">
+        <!-- Common navbar is here -->
+        <app-nav-bar [activeSection]="activeSection" />
+
+        <!-- Home Section -->
+        <div id="home">
+            <h1 id="home-section" class="invisible">Pushpendra Sapkale</h1>
+            <app-home (goToPageEmit)="jumpToPage($event)" />
+        </div>
+        <hr>
+
+        <!-- Timeline Section -->
+        <div id="experience">
+            <app-timeline />
+        </div>
+        <hr>
+
+        <!-- Skillz Section -->
+        <div id="skillz">
+            <app-my-skillz />
+        </div>
+        <hr>
+
+        <!-- Projects Section -->
+        <div id="projects">
+            <app-projects />
+        </div>
+        <hr>
+
+        <!-- Contact Section -->
+        <div id="contact">
+            <app-contacts />
+        </div>
+    </div>
+</main>

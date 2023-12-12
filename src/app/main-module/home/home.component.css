@@ -36,7 +36,7 @@
 }
 
 #my-pic {
-    background-image: url('../../assets/img/my-pic-home.png');
+    background-image: url('../../../assets/img/my-pic-home.png');
     background-repeat: no-repeat;
 }
 
