@@ -1,32 +1,41 @@
 .timeline-icons {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .dark-mode .exp {
-    background-color: black;
-    color: #f0f8ff
+  background-color: black;
+  color: #f0f8ff;
 }
 
 .exp {
-    background-color: white;
-    color: #0a1b2a;
+  background-color: white;
+  color: #0a1b2a;
 }
 
 .dark-mode .badge-class {
-    background-color: #5dd0fe;
-    color: #0a1b2a;
+  background-color: #5dd0fe;
+  color: #0a1b2a;
 }
 
 .badge-class {
-    background-color: #8a2be2;
-
+  background-color: #8a2be2;
 }
 
 .dark-mode .experience {
-    color: #5dd0fe;
+  color: #5dd0fe;
 }
 
 .experience {
-    color: #8a2be2;
+  color: #8a2be2;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main-timeline {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
