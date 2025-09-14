@@ -1,101 +1,126 @@
-<div class="my-5 py-5 main-timeline" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
-    <div class="row mb-5" id="qualifications-section">
+<div class="my-5 main-timeline" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
+    <div class="row" id="qualifications-section">
         <div class="col">
             <p class="fs-1 text-center fw-bold">Qualifications</p>
         </div>
     </div>
 
-    <div class="row m-0">
-
-        <!-- My Experience -->
-        <div class="col-12 col-lg-6">
-            <div class="row m-0">
-                <div
-                    class="col experience text-center fs-4 fw-bold d-flex align-items-center justify-content-center gap-3 my-3 mb-5">
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    <span>
-                        Experience
-                    </span>
+    <!-- My Education -->
+    <div>
+        <div
+            class="col experience text-center fs-4 fw-bold d-flex align-items-center justify-content-center gap-3 my-3 mb-5">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <span>
+                Education
+            </span>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="p-3 exp rounded">
+                    <p class="mb-1"><span class="badge rounded-pill badge-class">Aug 2019 - Aug 2021</span></p>
+                    <strong>MASTER OF COMPUTER APPLICATION</strong>
+                    <br>
+                    <span class="text-secondary">Medi-Caps University, Indore</span>
+                    <p class="mt-2">
+                        I have pursued Master of Computer Application (MCA) program, where I acquired a strong
+                        foundation in computer science and software development. This academic journey has provided
+                        me with valuable insights into various aspects of the field, equipping me with the knowledge
+                        and skills necessary for a successful career in technology.
+                    </p>
                 </div>
-                <div class="row m-0 mb-3">
-                    <div class="p-3 exp rounded mb-3">
-                        <p class="mb-1"><span class="badge rounded-pill badge-class">MARCH 2024 - CURRENT</span></p>
-                        <strong>FULL STACK DEVELOPER - </strong>
-                        <br>
-                        <span class="text-secondary">Turvo, Hyderabad</span>
-                        <p class="mt-2">
-                            At Turvo, I managed a key module of our product, overseeing its development using Angular and Node.js. 
-                            I played a crucial role in code review meetings, ensuring quality and proper integration. Additionally, 
-                            I created Jenkins jobs for build automation and wrote Python scripts to enhance testing efficiency.
-                        </p>
-                    </div>
+            </div>
 
-                    <div class="p-3 exp rounded mb-3">
-                        <p class="mb-1"><span class="badge rounded-pill badge-class">DEC 2021 - DEC 2023</span></p>
-                        <strong>FULL STACK DEVELOPER - </strong>
-                        <br>
-                        <span class="text-secondary">Engineer Philosophy Web Services, Indore</span>
-                        <p class="mt-2">
-                            I have gained proficiency in a diverse set of technologies including HTML, CSS, Bootstrap,
-                            Angular, Angular Material, Ag-Grid, Node.js,
-                            MySQL, Express.js, Mapbox and Turf.js.
-                            This professional journey has not only expanded my technical expertise but also allowed me
-                            to make meaningful contributions to noteworthy projects.
-                        </p>
-                    </div>
-
-                    <div class="p-3 exp rounded">
-                        <p class="mb-1"><span class="badge rounded-pill badge-class">JAN 2021 - MAY 2021</span></p>
-                        <strong>WEB DEVELOPMENT (INTERN) - </strong>
-                        <br>
-                        <span class="text-secondary">Cubexo Software Solutions, Indore</span>
-                        <p class="mt-2">
-                            At Cubexo Software Solutions, I had a valuable internship experience in web development.
-                            Working with the Cubexo software solution, I collaborated on real projects, created web
-                            pages, and implemented design elements. It was a rewarding experience that provided insights
-                            into the field of web development.
-                        </p>
-                    </div>
+            <div class="col-md-6">
+                <div class="p-3 exp rounded">
+                    <p class="mb-1"><span class="badge rounded-pill badge-class">Aug 2015 - Aug 2018</span></p>
+                    <strong>BACHELOR OF SCIENCE (INFORMATION TECHNOLOGY)</strong>
+                    <br>
+                    <span class="text-secondary">Devi Ahilya University, Indore</span>
+                    <p class="mt-2">
+                        My Bachelor of Science (BSc) in Information Technology was a pivotal phase in my academic
+                        journey, providing me with a comprehensive understanding of essential IT concepts and
+                        practices. This foundational education set the stage for my subsequent academic achievements
+                        and professional growth in the field of technology.
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- My Education -->
-        <div class="col-12 col-lg-6">
-            <div class="row m-0">
-                <div
-                    class="col experience text-center fs-4 fw-bold d-flex align-items-center justify-content-center gap-3 my-3 mt-5 mt-lg-3 mb-5">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    <span>
-                        Education
-                    </span>
-                </div>
-                <div class="row m-0 mb-3">
-                    <div class="p-3 exp rounded mb-3">
-                        <p class="mb-1"><span class="badge rounded-pill badge-class">Aug 2019 - Aug 2021</span></p>
-                        <strong>MASTER OF COMPUTER APPLICATION</strong>
-                        <br>
-                        <span class="text-secondary">Medi-Caps University, Indore</span>
-                        <p class="mt-2">
-                            I have pursued Master of Computer Application (MCA) program, where I acquired a strong
-                            foundation in computer science and software development. This academic journey has provided
-                            me with valuable insights into various aspects of the field, equipping me with the knowledge
-                            and skills necessary for a successful career in technology.
-                        </p>
-                    </div>
-                    <div class="p-3 exp rounded">
-                        <p class="mb-1"><span class="badge rounded-pill badge-class">Aug 2015 - Aug 2018</span></p>
-                        <strong>BACHELOR OF SCIENCE (INFORMATION TECHNOLOGY)</strong>
-                        <br>
-                        <span class="text-secondary">Devi Ahilya University, Indore</span>
-                        <p class="mt-2">
-                            My Bachelor of Science (BSc) in Information Technology was a pivotal phase in my academic
-                            journey, providing me with a comprehensive understanding of essential IT concepts and
-                            practices. This foundational education set the stage for my subsequent academic achievements
-                            and professional growth in the field of technology.
-                        </p>
-                    </div>
-                </div>
+    <!-- My Experience -->
+    <div class="mt-5">
+        <div class="experience text-center fs-4 fw-bold d-flex align-items-center justify-content-center gap-3 mb-5">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <span>
+                Experience
+            </span>
+        </div>
+        <div class="m-0 mb-3">
+            <div class="p-3 exp rounded mb-3">
+                <p class="mb-1"><span class="badge rounded-pill badge-class">March 2024 - CURRENT</span></p>
+                <strong>FULL STACK DEVELOPER - </strong>
+                <br>
+                <span class="text-secondary">Turvo, Hyderabad</span>
+                <ul>
+                    <li>Migrated backend from Node.js 10 to Node.js 22 for better performance and compatibility</li>
+                    <li>Implemented secure login & signup with JWT (access & refresh tokens) and Redis caching</li>
+                    <li>Used bcrypt to hash passwords, ensuring sensitive data security</li>
+                    <li>Set up Role-Based Access Control (RBAC) to manage user permissions effectively</li>
+                    <li>Integrated Okta SSO for seamless and secure user authentication</li>
+                    <li>Handled SRE on-call responsibilities and automated system alerting for proactive issue detection
+                    </li>
+                    <li>Designed & developed an internal “Script Runner” system with peer approvals</li>
+                    <li>Slack/email notifications, and post-execution features like cache refresh and permission saving
+                    </li>
+                    <li>Integrated Elastic Stack for centralized logging and visualization, improving monitoring and
+                        debugging efficiency</li>
+                    <li>Set up centralized logging using Elasticsearch, Logstash, and Kibana (ELK Stack) to collect,
+                        process, and visualize application logs</li>
+                    <li>Migrated application from Angular 10 to Angular 16, ensuring compatibility with latest features
+                        and performance improvements</li>
+                    <li>Developed reusable Angular components and services to enhance code maintainability and
+                        scalability</li>
+                    <li>Collaborated with cross-functional teams using Agile methodologies to deliver high-quality
+                        software solutions</li>
+                </ul>
+
+            </div>
+
+            <div class="p-3 exp rounded mb-3">
+                <p class="mb-1"><span class="badge rounded-pill badge-class">Dec 2021 - Dec 2023</span></p>
+                <strong>FULL STACK DEVELOPER - </strong>
+                <br>
+                <span class="text-secondary">Engineer Philosophy Web Services, Indore</span>
+                <ul>
+                    <li>Implemented AG-Grid with editable cells, custom columns, and search filters</li>
+                    <li>Built reusable chart components in Angular using Plotly.js</li>
+                    <li>Created survey tool with drag-and-drop and conditional logic</li>
+                    <li>Migrated application from Angular 11 to Angular 16</li>
+                    <li>Integrated OpenStreetMap with MapLibre for GIS mapping</li>
+                    <li>Added dynamic map styling and interactive custom data features</li>
+                    <li>Developed RESTful APIs using Node.js and Express.js</li>
+                    <li>Implemented user authentication and authorization with JWT</li>
+                    <li>Designed and managed databases using MongoDB and PostgreSQL</li>
+                    <li>Collaborated with cross-functional teams using Agile methodologies</li>
+                    <li>Utilized Git and GitHub for version control and code collaboration</li>
+                </ul>
+            </div>
+
+            <div class="p-3 exp rounded">
+                <p class="mb-1"><span class="badge rounded-pill badge-class">JAN 2021 - MAY 2021</span></p>
+                <strong>WEB DEVELOPMENT (INTERN) - </strong>
+                <br>
+                <span class="text-secondary">Cubexo Software Solutions, Indore</span>
+                <ul>
+                    <li>Learned fundamentals of web development with HTML, CSS, and JavaScript</li>
+                    <li>Explored ES features and their importance in modern JavaScript</li>
+                    <li>Worked with Angular and Bootstrap for building interactive UIs</li>
+                    <li>Practiced problem-solving through coding and solution implementation</li>
+                    <li>Gained experience in responsive design and CSS animations</li>
+                    <li>Learned and applied form validation techniques</li>
+                    <li>Understood the basics of version control using Git and GitHub</li>
+                    <li>Learned debugging techniques and best practices</li>
+                </ul>
             </div>
         </div>
     </div>

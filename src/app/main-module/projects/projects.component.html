@@ -121,8 +121,128 @@
             </div>
         </div>
 
-        <!-- Geojson Creator Card -->
+        <!-- Auth System Card -->
         <div class="col-md-6 mt-md-0 mt-5">
+            <div class="card">
+                <div id="authSystemCard" class="carousel slide p-3" data-bs-ride="carousel">
+                    <div class="carousel-inner border shadow rounded p-1">
+                        <div class="carousel-item active">
+                            <img src="../../../assets/img/auth-system1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../../assets/img/auth-system2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../../assets/img/auth-system3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../../assets/img/auth-system4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../../assets/img/auth-system5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../../assets/img/auth-system6.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="my-3 indicators d-flex justify-content-center gap-3">
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="0"
+                        (click)="changeCarouselImage('authsystem', 0)" class="active" aria-current="true"
+                        aria-label="Slide 1">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 0 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="1"
+                        (click)="changeCarouselImage('authsystem', 1)" aria-label="Slide 2">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 1 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="2"
+                        (click)="changeCarouselImage('authsystem', 2)" aria-label="Slide 3">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 2 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="3"
+                        (click)="changeCarouselImage('authsystem', 3)" aria-label="Slide 4">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 3 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="4"
+                        (click)="changeCarouselImage('authsystem', 4)" aria-label="Slide 5">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 4 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                    <button type="button" data-bs-target="#authSystemCard" data-bs-slide-to="5"
+                        (click)="changeCarouselImage('authsystem', 5)" aria-label="Slide 6">
+                        <i class="fa fa-circle-thin" aria-hidden="true"
+                            [ngClass]="carouselInfo.authsystem.active == 5 ? 'active-indicator' : 'inactive-indicator'"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Auth System</h5>
+                    <div *ngIf="carouselInfo.authsystem.moreInfo">
+                        <p class="card-text">
+                            This is a secure authentication system where users can log in and access services through
+                            multiple authentication methods. It includes features like JWT with public/private keys,
+                            bcrypt for password hashing, Redis caching for sessions, password reset via email OTP,
+                            and Single Sign-On (SSO) with Google. The system is containerized with Docker,
+                            orchestrated with Kubernetes, ensuring scalability and reliability.
+                        </p>
+
+                        <span class="badge text-bg-primary ms-2 py-2 mt-2">Node.js</span>
+                        <span class="badge text-bg-success ms-2 py-2 mt-2">Express.js</span>
+                        <span class="badge text-bg-secondary ms-2 py-2 mt-2">TypeScript</span>
+                        <span class="badge text-bg-danger ms-2 py-2 mt-2">Redis</span>
+                        <span class="badge text-bg-warning ms-2 py-2 mt-2">JWT</span>
+                        <span class="badge text-bg-dark ms-2 py-2 mt-2">Elastic Stack</span>
+                        <span class="badge text-bg-info ms-2 py-2 mt-2">Docker</span>
+                        <span class="badge text-bg-primary ms-2 py-2 mt-2">MySQL</span>
+                        <span class="badge text-bg-success ms-2 py-2 mt-2">bcrypt</span>
+                        <span class="badge text-bg-secondary ms-2 py-2 mt-2">Email OTP</span>
+                        <span class="badge text-bg-danger ms-2 py-2 mt-2">SSO (Google)</span>
+                        <span class="badge text-bg-warning ms-2 py-2 mt-2">Public/Private Keys</span>
+                        <p class="mt-3 fw-bold">My Role :</p>
+
+                        <ul>
+                            <li>Developed authentication & authorization with JWT and bcrypt</li>
+                            <li>Implemented password reset with email OTP functionality</li>
+                            <li>Integrated Google SSO for seamless login</li>
+                            <li>Used Redis for session caching and scalability</li>
+                            <li>Containerized services with Docker</li>
+                            <li>Created a single docker-compose.yml to install Redis, MySQL, Elasticsearch, Logstash,
+                                and Kibana</li>
+                            <li>Configured centralized logging to send application logs from containers to Elasticsearch
+                                via Logstash</li>
+                        </ul>
+
+                        <a class="d-flex align-items-center mb-3 text-decoration-none project-links"
+                            href="https://github.com/myselfsapkale/auth-system-server" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span class="ms-2">https://github.com/myselfsapkale/auth-system-server</span>
+                        </a>
+
+                        <a class="d-flex align-items-center mb-3 text-decoration-none project-links"
+                            href="https://github.com/myselfsapkale/auth-system-ui" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span class="ms-2">https://github.com/myselfsapkale/auth-system-ui</span>
+                        </a>
+                    </div>
+                    <a class="show-hide-more"
+                        (click)="carouselInfo.authsystem.moreInfo = !carouselInfo.authsystem.moreInfo">{{
+                        !carouselInfo.authsystem.moreInfo ? 'More' : 'Hide' }}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-md-3 mt-5">
+
+        <!-- Geojson Creator Card -->
+        <div class="col-md-6">
             <div class="card">
 
                 <div id="geojsoncreatorCard" class="carousel slide p-3" data-bs-ride="carousel">
@@ -206,9 +326,9 @@
                             <span class="ms-2">https://geojsoncreatortool.web.app/</span>
                         </a>
                         <a class="d-flex align-items-center text-decoration-none mt-2 mb-3 project-links"
-                            href="https://github.com/mainpushpendra/geojson-creator-tool" target="_blank">
+                            href="https://github.com/myselfsapkale/geojson-creator-tool" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
-                            <span class="ms-2">Github Preview</span>
+                            <span class="ms-2">Github</span>
                         </a>
                     </div>
                     <a class="show-hide-more"
@@ -217,6 +337,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>

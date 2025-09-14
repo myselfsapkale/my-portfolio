@@ -36,7 +36,7 @@
 }
 
 #my-pic {
-    background-image: url('../../../assets/img/my-pic-home.png');
+    background-image: url('../../../assets/img/pngwing.com.png');
     background-repeat: no-repeat;
 }
 
@@ -45,8 +45,9 @@
 
     #my-pic {
         width: 300px;
-        background-position: top;
-        background-size: 100%;
+        margin-left: 25px;
+        background-position: center;
+        background-size: contain;
     }
 
     #home-wrapper {
@@ -74,7 +75,8 @@
 
     #my-pic {
         width: 500px;
-        background-position: top;
+        margin-left: 25px;
+        background-position: center;
         background-size: cover;
     }
 
@@ -97,8 +99,9 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1283px) and (orientation : landscape) {
 
     #my-pic {
-        height: 40rem;
-        margin-left: 2rem;
+        height: 45rem;
+        margin-left: 15rem;
+        background-size: contain;
     }
 
 }
@@ -107,8 +110,9 @@
 @media only screen and (min-width: 992px) {
 
     #my-pic {
-        height: 40rem;
-        margin-left: 200px;
+        height: 45rem;
+        margin-left: 15rem;
+        background-size: contain;
     }
 
 }
