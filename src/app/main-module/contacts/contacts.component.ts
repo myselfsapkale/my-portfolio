@@ -32,10 +32,12 @@ export class ContactsComponent implements OnDestroy {
     this.showSpinner = true;
     Object.keys(form.controls).map(control => { // Here we are setting error on form controls which are invalid
      form.controls[control].touched = true;
-    })
+    });
 
     if(form.status == 'VALID') {  // If the form is valid then we will send the message
+      
       emailjs.init('Zrz-nyYvzTuhQV_d4');
+
       await emailjs.send("service_t1fdup4","template_muozs6r",{
         from_name: form.value.name,
         to_name: "Pushpendra Sapkale",
@@ -44,13 +46,14 @@ export class ContactsComponent implements OnDestroy {
         reply_to: form.value.email,
       });
       this.showNotification = true;
+
       setTimeout(() => {
         this.showNotification = false;
       }, 1000);
+      
       this.showSpinner = false;
       form.reset();
-    }
-    else {
+    } else {
       this.showSpinner = false;
     }
   }

@@ -129,7 +129,7 @@
     width: 90%;
 }
 
-.sql {
+.mongodb {
     transition: width 3s;
     transition-timing-function: steps(15, end);
     background-color: #1d6978;
@@ -150,21 +150,28 @@
     width: 90%;
 }
 
-.mapbox {
+.docker {
+    transition: width 3s;
+    transition-timing-function: cubic-bezier(0.79, 1.81, 1, -0.48);
+    background-color: #1a1f7d;
+    width: 85%;
+}
+
+.elastic-stack {
     transition: width 4s;
     transition-timing-function: ease-in;
     background-color: #3f76a3;
     width: 80%;
 }
 
-.maplibre {
+.rabbit-mq {
     transition: width 4s;
     transition-timing-function: ease-in-out;
     background-color: #534378;
     width: 80%;
 }
 
-.turf {
+.aws {
     transition: width 4s;
     transition-timing-function: ease;
     background-color: #3fa378;

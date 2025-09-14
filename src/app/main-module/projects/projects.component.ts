@@ -24,6 +24,10 @@ export class ProjectsComponent implements OnDestroy, AfterViewInit {
       active: 0,
       moreInfo: false
     },
+    authsystem: {
+      active: 0,
+      moreInfo: false
+    },
   }
 
   constructor(private _commonService: CommonServiceService) {
@@ -42,6 +46,7 @@ export class ProjectsComponent implements OnDestroy, AfterViewInit {
     const igismapCarousel = document.getElementById('igismapCard');
     const xcellenCarousel = document.getElementById('xcellenCard');
     const geojsoncreatorCarousel = document.getElementById('geojsoncreatorCard');
+    const authSystemCarousel = document.getElementById('authSystemCard');
 
     igismapCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
       this.carouselInfo.igismap.active = event.to;
@@ -53,6 +58,10 @@ export class ProjectsComponent implements OnDestroy, AfterViewInit {
     
     geojsoncreatorCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
       this.carouselInfo.geojsoncreator.active = event.to;
+    });
+    
+    authSystemCarousel?.addEventListener('slide.bs.carousel', (event: any) => {
+      this.carouselInfo.authsystem.active = event.to;
     });
   }
 
